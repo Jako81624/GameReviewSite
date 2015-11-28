@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WIP GAME REVIEWS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="fonts.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="jquery.easing.min.js"></script>
+	<script src="scrolling-nav.js"></script>
+	<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top top-test">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand page-scroll" href="#featured">Game Reviews</a>
+		</div>
+		<div>
+			<div class="collapse navbar-collapse top-test-enable" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a class="page-scroll" href="#featured">Featured</a></li>
+					<li><a class="page-scroll" href="#about">Latest</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<div id="featured" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+     <div class="item active ad1">
+        <div class="carousel-caption">
+           <h1 style="font-size: 50px">Just Cause 3</h1>
+           <p>We go hands-on with Avalanche Studio's latest Open-World Explosion Simulator!</p>
+        </div>
+     </div>
+  </div>
+</div>
+
+<div id="about" class="container-fluid">
+	<h1 style="font-size: 45px">Latest Articles</h1>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<h3>Just Cause 3</h3>
+				<img src="Carousel/JC3.jpg">
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<h3>Ghost Recon Wildlands</h3>
+				<img src="Carousel/GRW.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="navbar-fixed-bottom">
+<p>Open-source and Unlicensed</p>
+</div>
+
+</body>
+</html>
