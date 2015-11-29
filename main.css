@@ -58,12 +58,13 @@ body {
 }
 
 .ad1 h1 {
-	font-family: "ProductSans";
+	font-family: "Quicksand";
 	font-size: 60px;
+	font-weight: bold;
 }
 
 .ad1 p {
-	font-family: "ProductSans";
+	font-family: "Quicksand";
 	font-size: 20px;
 }
 .ad1 {
@@ -82,12 +83,13 @@ body {
 }
 
 .ad2 h1 {
-	font-family: "ProductSans";
+	font-family: "Quicksand";
 	font-size: 60px;
+	font-weight: bold;
 }
 
 .ad2 p {
-	font-family: "ProductSans";
+	font-family: "Quicksand";
 	font-size: 20px;
 }
 
@@ -105,9 +107,9 @@ body {
 	color: #000;
 }
 #latest h1 {
-	font-family: "ProductSans";
+	font-family: "Quicksand";
 }
 #latest h3 {
-	font-family: "ProductSans";
+	font-family: "Quicksand";
 }
 /*---------------------------------------------------*/
