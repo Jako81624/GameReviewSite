@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ elixir('css/all.css') }}" rel="stylesheet" type="text/css">
+	@yield('head')
     <script src="{{ elixir('js/all.js') }}"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">

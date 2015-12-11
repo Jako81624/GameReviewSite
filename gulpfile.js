@@ -14,6 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
      mix.styles(['bootstrap.css', 'main.css', 'fonts.css'])
         .scripts(['jquery-2.1.4.min.js', 'bootstrap.js', 'jquery.easing.min.js', 'scrolling-nav.js'])
-		.version(['/public/js/all.js', '/public/css/all.css'])
-         .copy('resource/assets/fonts', 'public/build/fonts');
+         .copy('resources/assets/fonts', 'public/build/fonts')
+		 .copy('resources/assets/css/list.css', 'public/css/list.css')
+		 .version(['/public/js/all.js', '/public/css/all.css', '/public/css/list.css']);
 });
