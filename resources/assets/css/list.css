@@ -25,7 +25,7 @@ body {
 }
 .jumbotron {
 	height: 400px;
-	background-image: url(Carousel/GRW.jpg);
+	background-image: url('/Carousel/GRW.jpg');
 	background-size: cover;
 }
 .jumbotron .container h1 {

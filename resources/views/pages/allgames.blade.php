@@ -1,4 +1,7 @@
 @extends('master')
+@section('head')
+    <link href="{{ elixir('css/list.css') }}" rel="stylesheet" type="text/css">
+@endsection
 @section('content')
 	<div class="container-fluid">
 		<div class="navbar-header">
