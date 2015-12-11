@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('pages.homepage');
 });
+Route::get('/allgames', function () {
+    return view('pages.allgames');
+});
