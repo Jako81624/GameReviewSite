@@ -1,20 +1,5 @@
-<?php
-	require_once("/cockpit/bootstrap.php");
-?>
-<!DOCTYPE html>
-<!--
-Day One complete!
--->
-<html>
-<head>
-	<title>WIP GAME REVIEWS LIST</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="{{ elixir('css/all.css') }}" rel="stylesheet" type="text/css">
-    <script src="{{ elixir('js/all.js') }}"></script>
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-inverse navbar-fixed-top top-test">
+@extends('master')
+@section('content')
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -34,7 +19,6 @@ Day One complete!
 			</div>
 		</div>
 	</div>
-</nav>
 
 <div class="jumbotron">
 	<div class="container">
@@ -42,9 +26,4 @@ Day One complete!
 	</div>
 </div>
 
-<div class="navbar-fixed-bottom">
-<p>Open-source and Unlicensed</p>
-</div>
-
-</body>
-</html>
+@endsection
