@@ -22,7 +22,7 @@
                 <ul class="nav navbar-nav">
                     <li><a class="page-scroll" href="#featured">Featured</a></li>
                     <li><a class="page-scroll" href="#latest">Latest</a></li>
-                    <li><a href="resources/views/pages/allgames.blade.php">All Games</a></li>
+                    <li><a href="/allgames">All Games</a></li>
                 </ul>
             </div>
         </div>
