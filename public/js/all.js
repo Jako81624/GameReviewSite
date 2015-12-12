@@ -2437,14 +2437,16 @@ $(function() {
 
 	
     $('a.page-scroll').bind('click', function(event) {
-        console.log("123");
+        console.log("123test");
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - $('.navbar').height()
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
+
+
 
 /*
 )
