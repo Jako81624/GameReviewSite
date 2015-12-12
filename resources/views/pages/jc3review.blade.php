@@ -137,16 +137,17 @@
 	the wingsuit is amazing.  The story is a little lacking, the driving arcadey and the map huge and bustling
 	with activity.  If all the good points in that little spiel outweight the negative, then I suggest you
 	buy it now.  Just make sure you meet the requirements set on the steam page.  Also, if you have frame drops
-	etc, put steam in offline mode and relaunch the game.  Seems to be a common fix for a lot of people.
+	etc, put steam in offline mode and relaunch the game.  Seems to be a common fix for a lot of people.</p>
+	
+	<ul>
+	<li>Game: Just Cause 3</li>
+	<li>Out: Now</li>
+	<li>Developer: Avalanche Studios New York</li>
+	<li>Publisher: Square Enix</li>
+	<li>Platform reviewed on: PC</li>
+	<li>Series: Just Cause</li>
+	</ul>
 
-	Game: Just Cause 3
-	Out: Now
-	Developer: Avalanche Studios New York
-	Publisher: Square Enix
-	Platform reviewed on: PC
-	Key provided or bought: Bought
-	Series: Just Cause
-	</p>
 	<h2>---------------------------------</h2>
 	<h2>Rating: 7.5/10 - Very Good</h2>
 	<h2>---------------------------------</h2>
