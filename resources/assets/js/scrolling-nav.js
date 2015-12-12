@@ -1,4 +1,5 @@
 //jQuery to collapse the navbar on scroll
+
 /*
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -19,7 +20,9 @@ $(document).ready(function(){
 	});
 });
 */
+
 //jQuery for page scrolling feature - requires jQuery Easing plugin
+
 $(function() {
 
 	

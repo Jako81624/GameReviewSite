@@ -5,7 +5,7 @@
 @section('content')
 <div class="jumbotron">
 	<div class="container">
-		<h1>Games List</h1>
+		<h1 id="Home">Games List</h1>
 	</div>
 </div>
 
@@ -47,8 +47,8 @@
 
 		<div class="col-md-4">
 			<div class="thumbnail">
-				<h4>Just Cause 3</h4>
-				<img src=" /Carousel/JC3.jpg">
+				<a href="/jc3review" style="color:inherit"><h4>Just Cause 3</h4></a>
+				<a href="/jc3review"><img src=" /Carousel/JC3.jpg"></a>
 			</div>
 		</div>
 

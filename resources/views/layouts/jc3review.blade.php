@@ -12,15 +12,12 @@
     <div>
         <div class="collapse navbar-collapse top-test-enable" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a class="page-scroll" href="#Home">Top</a></li>
-                <li><a class="page-scroll" href="#A">A-E</a></li>
-                <li><a class="page-scroll" href="#F">F-J</a></li>
-                <li><a class="page-scroll" href="#K">K-O</a></li>
-                <li><a class="page-scroll" href="#P">P-T</a></li>
-                <li><a class="page-scroll" href="#H">H-L</a></li>
-                <li><a class="page-scroll" href="#M">M-Q</a></li>
-                <li><a class="page-scroll" href="#R">R-V</a></li>
-                <li><a class="page-scroll" href="#W">W-Z</a></li>
+                <li><a class="page-scroll" href="#Top">Top</a></li>
+                <li><a class="page-scroll" href="#Gameplay">Gameplay</a></li>
+                <li><a class="page-scroll" href="#Story">Story</a></li>
+                <li><a class="page-scroll" href="#Graphics">Graphics and Settings</a></li>
+                <li><a class="page-scroll" href="#Conclusion">Conclusion</a></li>
+                <li><a class="page-scroll" href="#Screenshots">Screenshots</a></li>
             </ul>
         </div>
     </div>

@@ -11,7 +11,7 @@
         <div class="carousel-inner">
             <div class="item active ad1">
                 <div class="carousel-caption">
-                    <h1>Just Cause 3</h1>
+                    <a href="/jc3review" style="color:inherit"><h1>Just Cause 3</h1></a>
                     <p>We go hands-on with Avalanche Studio's latest Open-World Explosion Simulator!</p>
                 </div>
             </div>
@@ -49,8 +49,8 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <h3>Just Cause 3</h3>
-                    <img src="Carousel/JC3.jpg">
+                    <a href="/jc3review" style="color:inherit"><h3>Just Cause 3</h3></a>
+                    <a href="/jc3review"><img src="Carousel/JC3.jpg"></a>
                 </div>
             </div>
             <div class="col-md-4">

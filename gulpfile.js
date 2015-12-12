@@ -16,5 +16,8 @@ elixir(function(mix) {
         .scripts(['jquery-2.1.4.min.js', 'bootstrap.js', 'jquery.easing.min.js', 'scrolling-nav.js'])
          .copy('resources/assets/fonts', 'public/build/fonts')
 		 .copy('resources/assets/css/list.css', 'public/css/list.css')
-		 .version(['/public/js/all.js', '/public/css/all.css', '/public/css/list.css']);
+		 .copy('resources/assets/css/review.css', 'public/css/review.css')
+		 .version(['/public/js/all.js', '/public/css/all.css', '/public/css/list.css', '/public/css/review.css']);
+
+
 });

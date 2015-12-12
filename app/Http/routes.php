@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/allgames', function () {
     return view('pages.allgames');
 });
+Route::get('/jc3review', function () {
+    return view('pages.jc3review');
+});
