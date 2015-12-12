@@ -12,7 +12,7 @@
     <div>
         <div class="collapse navbar-collapse top-test-enable" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="{{ active_class(if_uri(['/'])) }}"><a class="page-scroll" href="/">Featured</a></li>
+                <li class="{{ active_class(if_uri(['/'])) }}"><a class="page-scroll" href="{{ if_uri(['/']) ? "#featured" : "/" }}">Featured</a></li>
                 <li><a class="page-scroll" href="#latest">Latest</a></li>
                 <li class="{{ active_class(if_uri(['allgames'])) }}"><a href="/allgames">All Games</a></li>
             </ul>
