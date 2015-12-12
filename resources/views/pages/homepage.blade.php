@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.standard')
 @section('content')
     <div id="featured" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

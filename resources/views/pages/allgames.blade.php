@@ -1,4 +1,4 @@
-@extends('list')
+@extends('layouts.list')
 @section('head')
     <link href="{{ elixir('css/list.css') }}" rel="stylesheet" type="text/css">
 @endsection
