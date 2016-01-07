@@ -7,3 +7,9 @@ Current status:
 - Placeholder All Games Page Active
 - Smooth Scrolling/Carousel/Navbar features active
 - Rudimentary Mobile Support
+
+Clone the site into Laragon/www or wherever Laragon is setup, and run the following commands from shell with node js installed:
+
+npm install
+composer install
+php artisan key:generate
