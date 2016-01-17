@@ -22,7 +22,10 @@ Route::get('/jc3review', function () {
 });
 Route::get('/contact', function () {
     return view('pages.contact');
+<<<<<<< HEAD
 });
 Route::get('/news', function () {
     return view('pages.news');
+=======
+>>>>>>> origin/Proposed
 });

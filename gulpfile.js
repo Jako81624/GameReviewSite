@@ -17,8 +17,13 @@ elixir(function(mix) {
          .copy('resources/assets/fonts', 'public/build/fonts')
 		 .copy('resources/assets/css/list.css', 'public/css/list.css')
 		 .copy('resources/assets/css/review.css', 'public/css/review.css')
+<<<<<<< HEAD
 		 .copy('resources/assets/css/basic.css', 'public/css/basic.css')
 		 .version(['/public/js/all.js', '/public/css/all.css', '/public/css/list.css', '/public/css/review.css', 'public/css/basic.css']);
+=======
+		 .copy('resources/assets/css/contact.css', 'public/css/contact.css')
+		 .version(['/public/js/all.js', '/public/css/all.css', '/public/css/list.css', '/public/css/review.css', 'public/css/contact.css']);
+>>>>>>> origin/Proposed
 
 
 });

@@ -17,7 +17,10 @@
                 <li class="{{ active_class(if_uri(['allgames'])) }}"><a href="/allgames">All Games</a></li>
             </ul>
             <ul class="nav navbar-nav" style="float: right">
+<<<<<<< HEAD
                 <li><a class="page-scroll" href="/news">News</a></li>
+=======
+>>>>>>> origin/Proposed
                 <li><a class="page-scroll" href="/contact">Contact</a></li>
             </ul>
         </div>
