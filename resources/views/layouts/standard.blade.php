@@ -16,6 +16,10 @@
                 <li><a class="page-scroll" href="#latest">Latest</a></li>
                 <li class="{{ active_class(if_uri(['allgames'])) }}"><a href="/allgames">All Games</a></li>
             </ul>
+            <ul class="nav navbar-nav" style="float: right">
+                <li><a class="page-scroll" href="/news">News</a></li>
+                <li><a class="page-scroll" href="/contact">Contact</a></li>
+            </ul>
         </div>
     </div>
 </div>

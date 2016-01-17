@@ -20,3 +20,9 @@ Route::get('/allgames', function () {
 Route::get('/jc3review', function () {
     return view('pages.jc3review');
 });
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::get('/news', function () {
+    return view('pages.news');
+});

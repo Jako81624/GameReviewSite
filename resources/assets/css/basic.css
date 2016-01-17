@@ -21,27 +21,16 @@ body {
 }
 
 .navbar .navbar-collapse {
-  padding-left: 19%;
-}
-.jumbotron {
-	height: 400px;
-	background-image: url('/Carousel/JC3.jpg');
-	background-size: cover;
+  padding-left: 32%;
 }
 .jumbotron .container h1 {
 	padding-top: 100px;
 	color: #fff;
 	font-weight: bold;
 }
-#review .container {
-	padding-bottom: 150px;
-}
-#review .container h2 {
+h3 {
 	font-weight: bold;
 }
-#review .container h4 {
-	font-weight: bold;
-}
-h2#Screenshots {
-	padding-bottom: 30px;
+#bottom {
+	padding-bottom: 60px;
 }
