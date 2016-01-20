@@ -1,0 +1,33 @@
+﻿Merge remote-tracking branch 'origin/Proposed' into Proposed
+
+# Conflicts:
+#	gulpfile.js
+#	resources/views/layouts/standard.blade.php
+#	resources/views/pages/contact.blade.php
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch Proposed
+# Your branch and 'origin/Proposed' have diverged,
+# and have 1 and 12 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	new file:   DayZero.md
+#	modified:   README.md
+#	modified:   gulpfile.js
+#	deleted:    readme.md
+#	new file:   resources/assets/css/contact.css
+#	new file:   resources/views/layouts/contact.blade.php
+#	modified:   resources/views/layouts/standard.blade.php
+#	modified:   resources/views/pages/contact.blade.php
+#
+
