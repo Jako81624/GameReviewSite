@@ -1,4 +1,4 @@
-@extends('layouts.jc3review')
+@extends('layouts.review')
 @section('head')
 <link href="{{ elixir('css/review.css') }}" rel="stylesheet" type="text/css">
 @endsection

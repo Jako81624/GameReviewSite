@@ -17,6 +17,12 @@ Route::get('/', function () {
 Route::get('/allgames', function () {
     return view('pages.allgames');
 });
-Route::get('/jc3review', function () {
+Route::get('/games/jc3', function () {
     return view('pages.jc3review');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::get('/news', function () {
+    return view('pages.news');
 });
