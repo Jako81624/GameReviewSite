@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @extends('layouts.homeonly')
 @section('content')
 @section('head')
@@ -10,13 +10,6 @@
 	background-size: cover;
 	}
 	</style>
-=======
-@extends('layouts.contact')
-@section('content')
-@section('head')
-	<link href="{{ elixir('css/contact.css') }}" rel="stylesheet" type="text/css">
->>>>>>> origin/Proposed
-@endsection
 <div class="jumbotron">
 	<div class="container">
 	<h1>Contact Us</h1>
