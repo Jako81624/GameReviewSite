@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/Proposed
 @extends('layouts.homeonly')
 @section('content')
 @section('head')
@@ -13,10 +9,6 @@
 	background-size: cover;
 	}
 	</style>
-<<<<<<< HEAD
-@endsection
-=======
->>>>>>> origin/Proposed
 <div class="jumbotron">
 	<div class="container">
 	<h1>Contact Us</h1>

@@ -19,9 +19,5 @@ elixir(function(mix) {
 		 .copy('resources/assets/css/review.css', 'public/css/review.css')
 		 .copy('resources/assets/css/basic.css', 'public/css/basic.css')
 		 .version(['/public/js/all.js', '/public/css/all.css', '/public/css/list.css', '/public/css/review.css', 'public/css/basic.css']);
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/Proposed
 });
