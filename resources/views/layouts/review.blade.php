@@ -29,6 +29,7 @@
             </ul>
             <ul class="nav navbar-nav" style="float: right">
                 <li><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal" style="font-size:24px">λ</a></li>
+                <li><a href="/contact">Contact Us</a></li>
             </ul>
         </div>
     </div>
