@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        DB::statement('ALTER TABLE `users` ADD `ip_address` VARBINARY(16)'); //http://stackoverflow.com/questions/17795517/laravel-4-saving-ip-address-to-model
     }
 
     /**
@@ -29,6 +30,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        DB::statement('ALTER TABLE `users` DROP COLUMN `ip_address`');
         Schema::drop('users');
     }
 }
