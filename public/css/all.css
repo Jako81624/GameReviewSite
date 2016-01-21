@@ -6806,15 +6806,6 @@ body {
 	background-color: #EBEBEB;
 	font-family: "Quicksand";
 }
-.navbar-fixed-bottom {
-	height: 60px;
-	background-color: #222;
-}
-.navbar-fixed-bottom p {
-	color: #fff;
-	text-align: center;
-	padding-top: 18px;
-}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -6823,6 +6814,15 @@ body {
 
 .navbar .navbar-collapse {
   padding-left: 42.5%;
+}
+.navbar-fixed-bottom {
+	height: 60px;
+	background-color: #222;
+}
+.navbar-fixed-bottom p {
+	color: #fff;
+	text-align: center;
+	padding-top: 18px;
 }
 
 /*
@@ -6902,7 +6902,7 @@ body {
 }
 
 .ad2 {
-	background: url(/Carousel/GRW.jpg) no-repeat center center fixed;
+	background: url(/Carousel/BindingOfIsaac/1.jpg) no-repeat center center fixed;
 }
 
 /*---------------------------------------------------*/
@@ -6913,9 +6913,9 @@ body {
 	width: 100%;
 	height: 100%;
 	padding-top: 10%;
-	padding-left: 55%;
+	padding-left: 10%;
 	padding-bottom: 20%;
-	padding-right: 10%;
+	padding-right: 55%;
 }
 
 .ad3 h1 {
@@ -6930,7 +6930,7 @@ body {
 }
 
 .ad3 {
-	background: url(/Carousel/FO4.jpg) no-repeat center center fixed;
+	background: url(/Carousel/RocketLeague/3.jpg) no-repeat center center fixed;
 }
 
 /*---------------------------------------------------*/
@@ -6940,36 +6940,31 @@ body {
 	position: static;
 	width: 100%;
 	height: 100%;
-	padding-top: 12%;
-	padding-left: 42%;
-	/*
-	padding-bottom: 60%;
-	padding-right: 10%;
-	*/
+	padding-top: 10%;
+	padding-left: 10%;
+	padding-bottom: 20%;
+	padding-right: 55%;
 }
 
 .ad4 h1 {
 	font-family: "Quicksand";
 	font-size: 60px;
 	font-weight: bold;
-	color: #404040;
 }
 
 .ad4 p {
 	font-family: "Quicksand";
 	font-size: 20px;
-	color: #808080;
 }
 
 .ad4 {
-	background: url(/Carousel/C3.jpg) no-repeat center center fixed;
+	background: url(/Carousel/RelicHuntersZero/2.jpg) no-repeat center center fixed;
 }
 
 /*---------------------------------------------------*/
 
 #latest {
 	text-align: center;
-	padding-bottom: 60px;
 	height: auto;
 	min-height: 100vh;
 	width: 100%;
