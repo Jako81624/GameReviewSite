@@ -1,4 +1,5 @@
 @extends('layouts.homeonly')
+@section('content')
 @section('head')
 	<link href="{{ elixir('css/basic.css') }}" rel="stylesheet" type="text/css">
 	<style>
@@ -8,8 +9,6 @@
 	background-size: cover;
 	}
 	</style>
-@endsection
-@section('content')
 <div class="jumbotron">
 	<div class="container">
 	<h1>Contact Us</h1>
@@ -24,4 +23,3 @@
 	<h3>Business Enquiries</h3>
 	<p id="bottom">For business inquiries you can contact us at: admin@ocgr.com</p>
 </div>
-@endsection
