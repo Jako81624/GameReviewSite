@@ -17,20 +17,20 @@
             </div>
             <div class="item ad2">
                 <div class="carousel-caption">
-                    <a href="/games/bindingofisaac" style="color:inherit"><h1>The Binding Of Isaac</h1></a>
-                    <p>One of our professional reviewers takes on the masterpiece that is "The Binding Of Isaac"</p>
+                    <h1>Ghost Recon Wildlands</h1>
+                    <p>We go on an open world romp with the latest Tom Clancy game</p>
                 </div>
             </div>
             <div class="item ad3">
                 <div class="carousel-caption">
-                    <a href="/games/rocketleague" style="color:inherit"><h1>Rocket League</h1></a>
-                    <p>Another one of our hot shot reviewers takes a look at the juggernaut that is Rocket League</p>
+                    <h1>Fallout 4</h1>
+                    <p>What's the scoop on Bethesda's latest Post-Apocalyptic Shooter?</p>
                 </div>
             </div>
             <div class="item ad4">
                 <div class="carousel-caption">
-                    <a href="/games/relichunterszero" style="color:inherit"><h1>Relic Hunters Zero</h1></a>
-                    <p>One of our highly skilled reviewers looks over a game I am totally unfamiliar with</p>
+                    <h1>Crysis 3</h1>
+                    <p>Can we run Crysis!?</p>
                 </div>
             </div>
             <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
@@ -49,40 +49,28 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/games/jc3" style="color:inherit"><h3>Just Cause 3</h3></a>
-                    <a href="/games/jc3"><img src="Carousel/JC3.jpg"></a>
+                    <a href="/jc3review" style="color:inherit"><h3>Just Cause 3</h3></a>
+                    <a href="/jc3review"><img src="Carousel/JC3.jpg"></a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/games/relichunterszero" style="color:inherit"><h3>Relic Hunters Zero</h3>
-                    <a href="/games/relichunterszero"><img src="Carousel/RelicHuntersZero/1.jpg"></a>
+                    <h3>Ghost Recon Wildlands</h3>
+                    <img src="Carousel/GRW.jpg">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/games/rocketleague" style="color:inherit"><h3>Rocket League</h3></a>
-                    <a href="/games/rocketleague"><img src="Carousel/RocketLeague/4.jpg"></a>
+                    <h3>Fallout 4</h3>
+                    <img src="Carousel/FO4.jpg">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/games/bindingofisaac" style="color:inherit"><h3>Binding Of Isaac</h3></a>
-                    <a href="/games/bindingofisaac"><img src="Carousel/BindingOfIsaac/1.jpg"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/" style="color:inherit"><h3>Fallout 4</h3></a>
-                    <a href="/games/"><img src="Carousel/FO4.jpg"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/riskofrain" style="color:inherit"><h3>Risk Of Rain</h3></a>
-                    <a href="/games/riskofrain"><img src="Carousel/RiskOfRain/1.jpg"></a>
+                    <h3>Crysis 3</h3>
+                    <img src="Carousel/C3.jpg">
                 </div>
             </div>
         </div>

@@ -9,12 +9,14 @@ use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Silber\Bouncer\Database\HasRolesAndAbilities;
+
 
 class User extends Model implements AuthenticatableContract,
                                     AuthorizableContract,
                                     CanResetPasswordContract
 {
-    use Authenticatable, Authorizable, CanResetPassword;
+    use Authenticatable, Authorizable, CanResetPassword, HasRolesAndAbilities;
 
     /**
      * The database table used by the model.
@@ -36,4 +38,14 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public function getIpAddressAttribute($value)
+    {
+        return inet_ntop($value);
+    }
+
+    public function setIpAddressAttribute($value)
+    {
+        $this->attributes['ip_address'] = inet_pton($value);
+    }
 }

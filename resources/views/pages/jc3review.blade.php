@@ -1,13 +1,6 @@
 @extends('layouts.review')
 @section('head')
 <link href="{{ elixir('css/review.css') }}" rel="stylesheet" type="text/css">
-<style>
-.jumbotron {
-	height: 400px;
-	background-image: url('/Carousel/JC3.jpg');
-	background-size: cover;
-}
-</style>
 @endsection
 
 @section('content')
