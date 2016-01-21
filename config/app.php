@@ -147,7 +147,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         HieuLe\Active\ActiveServiceProvider::class,
 
-
     ],
 
     /*
