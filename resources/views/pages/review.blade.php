@@ -23,7 +23,10 @@
                     {!! $contents !!}
                 </div>
                 <div class="col-md-4">
-                    Article By: {{$user['name']}}<br/>
+					@if($store == 'steam' && isset($store_app_id))
+					<iframe src="http://store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="646" height="190"></iframe>
+					@endif
+					Article By: {{$user['name']}}<br/>
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">

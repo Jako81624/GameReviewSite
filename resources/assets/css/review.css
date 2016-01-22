@@ -40,3 +40,6 @@ body {
 h2#Screenshots {
 	padding-bottom: 30px;
 }
+h2{
+	margin-top: 0px;
+}
