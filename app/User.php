@@ -41,11 +41,17 @@ class User extends Model implements AuthenticatableContract,
 
     public function getIpAddressAttribute($value)
     {
-        return inet_ntop($value);
+        if($value != null)
+            return inet_ntop($value);
     }
 
     public function setIpAddressAttribute($value)
     {
         $this->attributes['ip_address'] = inet_pton($value);
+    }
+
+    public function articles()
+    {
+        return $this->hasMany('App\Article', 'user_id', 'id');
     }
 }

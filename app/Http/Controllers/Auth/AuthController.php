@@ -7,6 +7,9 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\URL;
 
 class AuthController extends Controller
 {
@@ -30,7 +33,8 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest', ['except' => 'getLogout']);
+        if(Auth::check())
+            return response()->json(["auth" => true]);
     }
 
     /**
@@ -60,6 +64,31 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+        ]);
+    }
+
+    public function postLogin(Request $request)
+    {
+        $auth = false;
+        $this->validate($request, [
+            $this->loginUsername() => 'required', 'password' => 'required',
+        ]);
+        $throttles = $this->isUsingThrottlesLoginsTrait();
+
+        if ($throttles && $this->hasTooManyLoginAttempts($request)) {
+            return response()->json(['auth' => $auth, 'error' => 'Too many attempts.']);
+        }
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials, $request->has('remember'))) {
+            if ($throttles) {
+                $this->clearLoginAttempts($request);
+            }
+            $auth = true; // Success
+        }
+
+        return response()->json([
+            'auth' => $auth,
+            'intended' => URL::previous()
         ]);
     }
 }

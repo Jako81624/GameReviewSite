@@ -1,5 +1,6 @@
 @extends('layouts.standard')
 @section('content')
+    {{--This really needs to get moved to the db--}}
     <div id="featured" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#featured" data-slide-to="0" class="active"></li>
@@ -47,44 +48,14 @@
     <div id="latest" class="container-fluid">
         <h1 style="font-size: 45px; padding-bottom: 20px">Latest Articles</h1>
         <div class="row">
+            @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/games/jc3" style="color:inherit"><h3>Just Cause 3</h3></a>
-                    <a href="/games/jc3"><img src="Carousel/JC3.jpg"></a>
+                    <a href="/games/{{$article->slug}}"><h3>{{$article->title}}</h3></a>
+                    <a href="/games/{{$article->slug}}"><img src="{{$article->temporary_jumbo_image}}"></a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/relichunterszero" style="color:inherit"><h3>Relic Hunters Zero</h3>
-                    <a href="/games/relichunterszero"><img src="Carousel/RelicHuntersZero/1.jpg"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/rocketleague" style="color:inherit"><h3>Rocket League</h3></a>
-                    <a href="/games/rocketleague"><img src="Carousel/RocketLeague/4.jpg"></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/bindingofisaac" style="color:inherit"><h3>Binding Of Isaac</h3></a>
-                    <a href="/games/bindingofisaac"><img src="Carousel/BindingOfIsaac/1.jpg"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/" style="color:inherit"><h3>Fallout 4</h3></a>
-                    <a href="/games/"><img src="Carousel/FO4.jpg"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/games/riskofrain" style="color:inherit"><h3>Risk Of Rain</h3></a>
-                    <a href="/games/riskofrain"><img src="Carousel/RiskOfRain/1.jpg"></a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 @endsection

@@ -14,15 +14,6 @@ body {
 	text-align: center;
 	padding-top: 18px;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  padding-left: 19%;
-}
 .jumbotron {
 	height: 400px;
 	background-image: url('/Carousel/GRW.jpg');
