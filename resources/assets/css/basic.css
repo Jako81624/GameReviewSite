@@ -1,0 +1,27 @@
+body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #EBEBEB;
+	font-family: "Quicksand";
+}
+.navbar-fixed-bottom {
+	height: 60px;
+	background-color: #222;
+}
+.navbar-fixed-bottom p {
+	color: #fff;
+	text-align: center;
+	padding-top: 18px;
+}
+.jumbotron .container h1 {
+	padding-top: 100px;
+	color: #fff;
+	font-weight: bold;
+}
+h3 {
+	font-weight: bold;
+}
+#bottom {
+	padding-bottom: 60px;
+}

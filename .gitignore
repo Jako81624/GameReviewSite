@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.idea/
+/public/css
+/public/js
+/public/build
+/public/css/all.css
