@@ -3,9 +3,7 @@
 	<link href="{{ elixir('css/basic.css') }}" rel="stylesheet" type="text/css">
 	<style>
 	.jumbotron {
-	height: 400px;
 	background-image: url('/Carousel/FO4.jpg');
-	background-size: cover;
 	}
 	</style>
 	@endsection
