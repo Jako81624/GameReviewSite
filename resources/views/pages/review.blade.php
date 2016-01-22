@@ -24,9 +24,11 @@
                 </div>
                 <div class="col-md-4">
 					@if($store == 'steam' && isset($store_app_id))
-					<iframe src="http://store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="646" height="190"></iframe>
+						<iframe src="http://store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="646" height="190"></iframe>
 					@endif
-					<script src="https://www.reddit.com/r/rocketleague/.embed?limit=5&t=all&style=off" type="text/javascript"></script>
+					@if(isset($subreddit))
+						<script src="https://www.reddit.com/r/{{$subreddit}}/.embed?limit=5&t=all&style=off" type="text/javascript"></script>
+					@endif
 					Article By: {{$user['name']}}<br/>
                     @allows('article.admin')
 					<h3>Administration</h3>
