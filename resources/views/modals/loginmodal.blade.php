@@ -17,9 +17,9 @@
                         <div class="modal-body">
                             <div id="div-login-msg">
                                 <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-login-msg">Type your email and password.</span>
+                                <span id="text-login-msg">Type your username and password.</span>
                             </div>
-                            <input id="login_email" class="form-control" name="email" type="text" placeholder="E-Mail" required>
+                            <input id="login_email" class="form-control" name="email" type="text" placeholder="Username" required>
                             <input id="login_password" class="form-control" name="password" type="password" placeholder="Password" required>
                             <div class="checkbox">
                                 <label>
