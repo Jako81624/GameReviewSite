@@ -1,13 +1,3 @@
-/* #####################################################################
-   #
-   #   Project       : Modal Login with jQuery Effects
-   #   Author        : Rodrigo Amarante (rodrigockamarante)
-   #   Version       : 1.0
-   #   Created       : 07/29/2015
-   #   Last Change   : 08/04/2015
-   #
-   ##################################################################### */
-   
 $(function() {
     
     var $formLogin = $('#login-form');
@@ -23,12 +13,25 @@ $(function() {
             case "login-form":
                 var $lg_username=$('#login_username').val();
                 var $lg_password=$('#login_password').val();
-                if ($lg_username == "ERROR") {
-                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
-                } else {
-                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
-                }
-                return false;
+                $.ajax({
+                    type: 'POST',
+                    url: '/auth/login',
+                    data: $('#login-form').serialize(),
+                    beforeSend: function() {
+                        msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-refresh", "Logging In...");
+                    },
+                    success: function(data) {
+                        if(data.auth == false)
+                        {
+                            msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error: " + data.error);
+                        } else {
+                            location.reload();
+                        }
+                    },
+                    error: function(xhr, textStatus, thrownError) {
+                        bootbox.alert('Something went to wrong.Please Try again later... ' + thrownError);
+                    }
+                });
                 break;
             case "lost-form":
                 var $ls_email=$('#lost_email').val();

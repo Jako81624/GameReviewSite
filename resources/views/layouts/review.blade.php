@@ -1,5 +1,4 @@
 @extends('master')
-@extends('modal')
 @section('navbar')
 <div class="container-fluid">
     <div class="navbar-header">
@@ -27,10 +26,7 @@
                         <li><a class="page-scroll" href="#Screenshots">Screenshots</a></li>
                     </ul>
             </ul>
-            <ul class="nav navbar-nav" style="float: right">
-                <li><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal" style="font-size:24px">λ</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-            </ul>
+            @include('partials.navbar-right')
         </div>
     </div>
 </div>

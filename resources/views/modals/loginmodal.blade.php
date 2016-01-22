@@ -13,17 +13,17 @@
                 <div id="div-forms">
                 
                     <!-- Begin # Login Form -->
-                    <form id="login-form">
+                    <form id="login-form" method="POST">
                         <div class="modal-body">
                             <div id="div-login-msg">
                                 <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
                                 <span id="text-login-msg">Type your username and password.</span>
                             </div>
-                            <input id="login_username" class="form-control" type="text" placeholder="Username" required>
-                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <input id="login_email" class="form-control" name="email" type="text" placeholder="Username" required>
+                            <input id="login_password" class="form-control" name="password" type="password" placeholder="Password" required>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Remember me
+                                    <input type="checkbox" id="login_remember" name="remember"> Remember me
                                 </label>
                             </div>
                         </div>
@@ -38,19 +38,19 @@
                         </div>
                     </form>
                     <!-- End # Login Form -->
-                    
+
                     <!-- Begin | Lost Password Form -->
                     <form id="lost-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-lost-msg">
-                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-lost-msg">Type your e-mail.</span>
+                                {{--<div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>--}}
+                                <span id="text-lost-msg">While OCGR is in Alpha, please contact your friendly admin on discord to reset your password.</span>
                             </div>
-                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            {{--<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>--}}
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                {{--<button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>--}}
                             </div>
                             <div>
                                 <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
@@ -59,21 +59,21 @@
                         </div>
                     </form>
                     <!-- End | Lost Password Form -->
-                    
+
                     <!-- Begin | Register Form -->
                     <form id="register-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-register-msg">
-                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-register-msg">Register an account.</span>
+                                {{--<div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>--}}
+                                <span id="text-register-msg">Register while in alpha is by admin invite only.</span>
                             </div>
-                            <input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            {{--<input id="register_username" class="form-control" type="text" placeholder="Username" required>
                             <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>--}}
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                {{--<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>--}}
                             </div>
                             <div>
                                 <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
@@ -82,7 +82,7 @@
                         </div>
                     </form>
                     <!-- End | Register Form -->
-                    
+
                 </div>
                 <!-- End # DIV Form -->
                 

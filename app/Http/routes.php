@@ -11,21 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.homepage');
-});
-Route::get('/allgames', function () {
-    return view('pages.allgames');
-});
-Route::get('/games/jc3', function () {
-    return view('pages.Reviews.jc3review');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-Route::get('/news', function () {
-    return view('pages.news');
-});
+Route::get('/', 'HomeController@index');
+Route::get('/allgames', 'ArticleController@index');
+Route::get('/games/{articleslug}', 'ArticleController@show');
+
+//AUTHENTICATION
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+//TESTING ROUTES
+
 Route::get('/games/bindingofisaac', function () {
     return view('pages.Reviews.bindingofisaacreview');
 });
@@ -37,4 +32,13 @@ Route::get('/games/rocketleague', function () {
 });
 Route::get('/games/riskofrain', function () {
     return view('pages.Reviews.riskofrainreview');
+});
+Route::get('/games/jc3', function () {
+    return view('pages.Reviews.jc3review');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::get('/news', function () {
+    return view('pages.news');
 });

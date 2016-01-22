@@ -169,3 +169,34 @@ body {
 }
 
 /*---------------------------------------------------*/
+
+.navbar-fixed-bottom {
+	height: 60px;
+	background-color: #222;
+	border-color: transparent;
+}
+.navbar-fixed-bottom p {
+	color: #fff;
+	text-align: center;
+	padding-top: 18px;
+}
+.btn-primary {
+	background-color: #333;
+	border-color: #333;
+}
+.btn {
+	border: 0px;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: 0px;
+}
+.jumbotron {
+	height: 400px;
+	background-size: cover;
+}
+
+@media (min-width: 1200px){
+	.container {
+		width: 90%;
+	}
+}

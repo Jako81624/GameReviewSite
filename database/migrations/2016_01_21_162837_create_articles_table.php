@@ -17,6 +17,10 @@ class CreateArticlesTable extends Migration
             $table->integer('user_id')->index()->unsigned();
             $table->integer('cover_id')->unsigned();
             $table->string('slug', 255)->unique();
+            $table->text('title')->index();
+            $table->text('temporary_jumbo_image');
+            $table->char('store', 5);
+            $table->integer('store_app_id');
             $table->longText('contents');
             $table->boolean('published');
             $table->integer('approved_version');
