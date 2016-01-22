@@ -24,10 +24,12 @@
                 </div>
                 <div class="col-md-4">
 					@if($store == 'steam' && isset($store_app_id))
-						<iframe src="http://store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="646" height="190"></iframe>
+						<iframe src="http://store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="100%" height="190"></iframe>
 					@endif
 					@if(isset($subreddit))
-						<script src="https://www.reddit.com/r/{{$subreddit}}/.embed?limit=5&t=all&style=off" type="text/javascript"></script>
+						<div id="reddit">
+							<script src="https://www.reddit.com/r/{{$subreddit}}/top/.embed?limit=5&t=day"></script>
+						</div>
 					@endif
 					Article By: {{$user['name']}}<br/>
                     @allows('article.admin')
@@ -37,7 +39,8 @@
 						<tr><td>ID</td><td>{{$id}}</td></tr>
 						<tr><td>SLUG</td><td>{{$slug}}</td></tr>
 						<tr><td>STORE</td><td>{{$store or 'N/A'}}</td></tr>
-						<tr><td>APPID</td><td>{{$sotre_app_id or 'N/A'}}</td></tr>
+						<tr><td>APPID</td><td>{{$store_app_id or 'N/A'}} <a href="http://store.steampowered.com/app/{{$store_app_id or '0'}}/" target="_blank">view</a></td></tr>
+						<tr><td>REDDIT</td><td>{{$subreddit or 'N/A'}}</td></tr>
 						<tr><td>PUBLIC</td><td>{{$published}}</td></tr>
 						<tr><td>CREATED</td><td>{{$created_at}}</td></tr>
 					</table>
