@@ -40,3 +40,24 @@ body {
 h2#Screenshots {
 	padding-bottom: 30px;
 }
+h2{
+	margin-top: 0px;
+}
+#reddit {
+	padding-top: 20px;
+}
+#reddit .reddit-header {
+	background-color: #333 !important;
+}
+#reddit .reddit-header a {
+	color: #fff !important;
+}
+#reddit .reddit-header h4 {
+	color: #fff !important;
+	font-family: "Quicksand" !important;
+}
+#reddit .reddit-entry .reddit-link-title {
+	color: #333 !important;
+	font-family: "Quicksand" !important;
+	font-weight: bold !important;
+}

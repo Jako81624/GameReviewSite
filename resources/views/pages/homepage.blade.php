@@ -51,7 +51,7 @@
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="/games/{{$article->slug}}"><h3>{{$article->title}}</h3></a>
+                    <a href="/games/{{$article->slug}}"><h3 style="color: #000">{{$article->title}}</h3></a>
                     <a href="/games/{{$article->slug}}"><img src="{{$article->temporary_jumbo_image}}"></a>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Be right back.</title>
+        <title>This is not the page you're looking for.</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -40,7 +40,11 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Be right back. Sorry for the inconvenience.</div>
+                <div class="title">
+				There is no page...<br />
+				There is only <strong>ZUUL!</strong></br>
+				<span style="font-size:small">404 - Page not found. Sorry.</span>
+                <a href="/" style="color: inherit"><p style="font-size: 25px">Click here to go to safety</p></a>
             </div>
         </div>
     </body>

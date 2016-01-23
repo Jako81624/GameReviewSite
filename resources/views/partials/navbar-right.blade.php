@@ -1,10 +1,10 @@
 <ul class="nav navbar-nav" style="float: right">
     @if(!Auth::check())
-        <li><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal" style="font-size:24px">?</a></li>
+        <li><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal" style="font-size:24px">λ</a></li>
     @else
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                ?
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-size:24px">
+                λ
                 <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">

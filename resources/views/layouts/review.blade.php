@@ -31,3 +31,8 @@
     </div>
 </div>
 @endsection
+@section('modals')
+    @if(!Auth::check())
+        @include('modals.loginmodal')
+    @endif
+@endsection
