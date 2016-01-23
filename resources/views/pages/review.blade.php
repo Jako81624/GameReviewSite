@@ -20,6 +20,7 @@
                 <div class="col-md-8">
                     @allows('article.admin')
                     @endallows
+					{!!$intro!!}
 					<h2 id="Gameplay">Gameplay</h2>
                     {!!$gameplay!!}
 					<h2 id="Story">Story</h2>
