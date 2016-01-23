@@ -10,7 +10,8 @@
 		"barryvdh/laravel-debugbar": "^2.0",
 		"silber/bouncer": "^0.0.20",
         "hieu-le/active": "^3.0",
-        "intervention/image": "2.3.*"
+        "intervention/image": "^2.3",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

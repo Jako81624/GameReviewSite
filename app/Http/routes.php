@@ -19,26 +19,7 @@ Route::get('/games/{articleslug}', 'ArticleController@show');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-//TESTING ROUTES
+//PRIVILEDGED
 
-Route::get('/games/bindingofisaac', function () {
-    return view('pages.Reviews.bindingofisaacreview');
-});
-Route::get('/games/relichunterszero', function () {
-    return view('pages.Reviews.relichunterszeroreview');
-});
-Route::get('/games/rocketleague', function () {
-    return view('pages.Reviews.rocketleaguereview');
-});
-Route::get('/games/riskofrain', function () {
-    return view('pages.Reviews.riskofrainreview');
-});
-Route::get('/games/jc3', function () {
-    return view('pages.Reviews.jc3review');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-Route::get('/news', function () {
-    return view('pages.news');
-});
+Route::get('admin/uploadImage', 'Admin\ImageController@show');
+Route::post('admin/uploadImage', 'Admin\ImageController@create');

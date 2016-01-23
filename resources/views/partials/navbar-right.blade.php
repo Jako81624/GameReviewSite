@@ -10,6 +10,9 @@
             <ul class="dropdown-menu">
                 <li><a href="#">Welcome {{Auth::user()->name}}</a></li>
                 <li role="separator" class="divider"></li>
+                @allows('images.upload')
+                    <li><a href="{{url('/admin/uploadImage')}}">Upload Image</a></li>
+                @endallows
                 <li><a class="alert-danger" href="{{url('/auth/logout')}}">Logout</a></li>
             </ul>
         </li>

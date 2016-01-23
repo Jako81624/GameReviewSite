@@ -146,6 +146,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         HieuLe\Active\ActiveServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -198,6 +199,7 @@ return [
 		'Debugbar' => Barryvdh\Debugbar\Facade::class,
 		'Bouncer'   => Silber\Bouncer\BouncerFacade::class,
         'Active' => HieuLe\Active\Facades\Active::class,
+        'Image' => 'Intervention\Image\Facades\Image'
 
     ],
 
