@@ -15,5 +15,6 @@
         </li>
     @endif
     <li class="{{ active_class(if_uri(['news'])) }}"><a class="page-scroll" href="/news">News</a></li>
+    <li><a href="http://www.patreon.com/ocgr">Patreon</a></li>
     <li class="{{ active_class(if_uri(['contact'])) }}"><a class="page-scroll" href="/contact">Contact</a></li>
 </ul>
