@@ -44,6 +44,7 @@
 				There is no page...<br />
 				There is only <strong>ZUUL!</strong></br>
 				<span style="font-size:small">404 - Page not found. Sorry.</span>
+                <a href="/" style="color: inherit"><p style="font-size: 25px">Click here to go to safety</p></a>
             </div>
         </div>
     </body>
