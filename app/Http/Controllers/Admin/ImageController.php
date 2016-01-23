@@ -36,7 +36,7 @@ class ImageController extends BackendController
 
     protected function makeImage($file, $height, $width, $randomFilename)
     {
-        $img = Image::make($file)->resize($height, $width);
+        $img = Image::make($file->getRealPath())->resize($height, $width);
 
         $path = '/app/images/';
         if($height < 250)
