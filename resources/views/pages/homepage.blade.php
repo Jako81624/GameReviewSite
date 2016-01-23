@@ -77,6 +77,16 @@
                     <a href="https://www.youtube.com/user/genuineparts"><img src="/Carousel/Writers/Genuine.png" style="min-height: 100px; height: 200px;"></a>
                 </div>
             </div>
+            <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
+                    <img src="/Carousel/Writers/Whartzz.jpg" style="min-height: 100px; height: 200px;">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
+                    <img src="/Carousel/Writers/Jsull07.jpg" style="min-height: 100px; height: 200px;">
+                </div>
+            </div>
         </div>
     </div>
 @endsection
