@@ -100,7 +100,7 @@
             <div class="col-md-2">
                 <div class="thumbnail" style="min:height: 100px; height: 250px; width: 210px">
                     <h4 a href-"https://soundcloud.com/kieran_tunnicliffe" style="color:#000">KJT</h4>
-                    <a href="https://soundcloud.com/kieran_tunnicliffe"><img src="//:cdn.ocgr.io/Hn5A0D9saHSp16p7.png" style="min-height: 100px; height: 200px;"></a>
+                    <a href="https://soundcloud.com/kieran_tunnicliffe"><img src="//cdn.ocgr.io/Hn5A0D9saHSp16p7.png" style="min-height: 100px; height: 200px;"></a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
             <div class="col-md-2">
                 <div class="thumbnail" style="min:height: 100px; height: 250px; width: 210px">
                     <h4 style="color:#000">Lugo</h4>
-                    <img src="//:cdn.ocgr.io/5R5oDN4Vz2yxWaq1.png" style="min-height: 100px; height: 200px;">
+                    <img src="//cdn.ocgr.io/5R5oDN4Vz2yxWaq1.png" style="min-height: 100px; height: 200px;">
                 </div>
             </div>
         </div>
