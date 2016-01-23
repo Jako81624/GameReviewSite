@@ -23,19 +23,19 @@ class ImageController extends BackendController
     public function create(Request $request)
     {
         $file = Request::file('file');
-        $return['thumbnail'] = $this->makeImage($file, 200, 200);
-        $return['fullsize'] = $this->makeImage($file, 1920, 1080);
+		$randomFilename = str_random();
+        $return['thumbnail'] = $this->makeImage($file, 200, 200, $randomFilename);
+        $return['fullsize'] = $this->makeImage($file, 1920, 1080, $randomFilename);
         return $return;
     }
 
-    protected function makeImage($file, $height, $width)
+    protected function makeImage($file, $height, $width, $randomFilename = str_random())
     {
         $img = Image::make($file)->resize($height, $width);
 
         $path = '/app/images/';
         if($height < 250)
             $path = '/app/images/thumb/';
-        $randomFilename = str_random();
         $img->save(storage_path() . $path . $randomFilename . '.png', 90);
         $image = new Images;
         $image->user_id = Auth::user()->id;
