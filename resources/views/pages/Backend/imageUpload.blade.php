@@ -27,6 +27,7 @@
 						@endforeach
 					</tbody>
                 </table>
+				{!! $previous->render() !!}
 			</div>
         </div>
     </div>

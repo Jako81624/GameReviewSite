@@ -22,7 +22,7 @@ class ImageController extends BackendController
 	}
     public function show()
     {
-		$return['previous'] = Images::groupBy('file')->orderBy('id', 'desc')->get();
+		$return['previous'] = Images::groupBy('file')->orderBy('id', 'desc')->paginate(20);
         return view('pages.Backend.imageUpload', $return);
     }
 
