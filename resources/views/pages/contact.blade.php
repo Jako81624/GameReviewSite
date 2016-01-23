@@ -16,10 +16,10 @@
 
 <div class="container">
 	<h3>General Enquiries</h3>
-	<p>For general inquiries you can contact us at: inquiries@ocgr.com</p>
+	<p>For general enquiries you can contact us at: enquiries@ocgr.com</p>
 	<h3>Writing Enquiries</h3>
-	<p>For writing inquiries you can contact us at: writing@ocgr.com</p>
+	<p>For writing enquiries you can contact us at: writing@ocgr.com</p>
 	<h3>Business Enquiries</h3>
-	<p id="bottom">For business inquiries you can contact us at: admin@ocgr.com</p>
+	<p id="bottom">For business enquiries you can contact us at: admin@ocgr.com</p>
 </div>
 	@endsection
