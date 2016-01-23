@@ -13,13 +13,7 @@ return [
     |
     */
 
-	'debug' => value(function(){
-				if(env('APP_DEBUG') == true)
-					return true;
-				if(Illuminate\Support\Facades\Request::getClientIp() == env('APP_DEBUG_IP'))
-					return true;
-				return false;
-			}),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
