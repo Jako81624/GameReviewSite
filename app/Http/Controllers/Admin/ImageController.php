@@ -15,6 +15,11 @@ class ImageController extends BackendController
         if(!Permissions::check('images.upload'))
             abort(403);
     }
+	
+	public function index()
+	{
+		//@TODO Paginated image view
+	}
     public function show()
     {
         return view('pages.Backend.imageUpload');
