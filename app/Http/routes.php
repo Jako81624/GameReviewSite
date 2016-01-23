@@ -23,3 +23,11 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 Route::get('admin/uploadImage', 'Admin\ImageController@show');
 Route::post('admin/uploadImage', 'Admin\ImageController@create');
+
+//MISC
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::get('/news', function () {
+    return view('pages.news');
+}); 
