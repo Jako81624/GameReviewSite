@@ -81,12 +81,17 @@
                 </div>
             </div>
             <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
                 <div class="thumbnail" style="min:height: 100px; height: 250px; width: 210px">
                     <h4 style="color:#000">Whartzz</h4>
                     <img src="/Carousel/Writers/Whartzz.jpg" style="min-height: 100px; height: 200px;">
                 </div>
             </div>
             <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
+                    <img src="/Carousel/Writers/Jsull07.jpg" style="min-height: 100px; height: 200px;">
+                </div>
+            </div>
                 <div class="thumbnail" style="min:height: 100px; height: 250px; width: 210px">
                     <h4 style="color:#000">Jsull07</h4>
                     <img src="/Carousel/Writers/Jsull07.jpg" style="min-height: 100px; height: 200px;">
