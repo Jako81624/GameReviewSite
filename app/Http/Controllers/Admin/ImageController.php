@@ -29,7 +29,7 @@ class ImageController extends BackendController
         return $return;
     }
 
-    protected function makeImage($file, $height, $width, $randomFilename = str_random())
+    protected function makeImage($file, $height, $width, $randomFilename)
     {
         $img = Image::make($file)->resize($height, $width);
 
