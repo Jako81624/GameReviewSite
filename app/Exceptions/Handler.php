@@ -49,7 +49,7 @@ class Handler extends ExceptionHandler
 		{
 			// Define the response
 			$response = [
-				'errors' => 'Sorry, something went wrong.'
+				'error' => 'Sorry, something went wrong: ' . $e->getMessage();
 			];
 
 			// If the app is in debug mode
