@@ -20,7 +20,20 @@
                 <div class="col-md-8">
                     @allows('article.admin')
                     @endallows
-                    {!! $contents !!}
+					<h2 id="Gameplay">Gameplay</h2>
+                    {!!$gameplay!!}
+					<h2 id="Story">Story</h2>
+					{!!$story!!}
+					<h2 id="Graphics">Graphics, Settings and Performance</h2>
+					{!!$graphics!!}
+					<h2 id="Conclusion">Conclusion</h2>
+					{!!$conclusion!!}
+					<h2>--------------------------------------</h2>
+					<h2>Rating: {{$score}}/10 - {{$score_text}}</h2>
+					<h2>--------------------------------------</h2>
+					
+					<h2 id="Screenshots">Screenshots</h2>
+					{!!$screenshots!!}
                 </div>
                 <div class="col-md-4">
 					@if($store == 'steam' && isset($store_app_id))
