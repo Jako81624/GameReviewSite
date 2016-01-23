@@ -92,6 +92,7 @@
                     <img src="/Carousel/Writers/Jsull07.jpg" style="min-height: 100px; height: 200px;">
                 </div>
             </div>
+            <div class="row">
             <div class="col-md-2">
                 <div class="thumbnail" style="min:height: 100px; height: 250px; width: 210px">
                     <h4 a href-"https://soundcloud.com/kieran_tunnicliffe" style="color:#000">KJT</h4>
@@ -99,7 +100,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
             <div class="col-md-2">
                 <div class="thumbnail" style="min:height: 100px; height: 250px; width: 210px">
                     <h4 style="color:#000">Lugo</h4>
