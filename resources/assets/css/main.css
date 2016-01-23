@@ -159,7 +159,7 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	color: #000;
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 }
 #latest h1 {
 	font-family: "Quicksand";
@@ -167,6 +167,23 @@ body {
 #latest h3 {
 	font-family: "Quicksand";
 }
+
+#writers {
+	text-align: center;
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+	color: #000;
+	padding-bottom: 20px;
+}
+
+#writers h1 {
+	font-family: "Quicksand";
+}
+#writers h3 {
+	font-family: "Quicksand";
+}
+
 
 /*---------------------------------------------------*/
 

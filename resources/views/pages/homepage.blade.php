@@ -58,4 +58,25 @@
             @endforeach
         </div>
     </div>
+
+    <div id="writers" class="container-fluid">
+        <h1 style="font-size: 45px; padding-bottom: 20px">Writers</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
+                    <a href="http://www.youtube.com/jako81624"><img src="/Carousel/Writers/Jako81624.jpg" style="min-height: 100px; height: 200px;"></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
+                    <a href="https://www.youtube.com/user/CoolJWR100"><img src="/Carousel/Writers/Llama.png" style="min-height: 100px; height: 200px;"></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail" style="min:height: 100px; height: 210px; width: 210px">
+                    <a href="https://www.youtube.com/user/genuineparts"><img src="/Carousel/Writers/Genuine.png" style="min-height: 100px; height: 200px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
