@@ -18,7 +18,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data['articles'] = Article::orderBy('id', 'desc')->take(6)->get();
+        $data['articles'] = Article::orderBy('id', 'desc')->where('published', 1)->take(6)->get();
         return view('pages.homepage', $data);
     }
 }

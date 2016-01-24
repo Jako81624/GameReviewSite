@@ -18,7 +18,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $data['games'] = Article::orderBy('title', 'asc')->get();
+        $data['games'] = Article::orderBy('title', 'asc')->where('published', 1)->get();
         return view('pages.allgames', $data);
     }
 
