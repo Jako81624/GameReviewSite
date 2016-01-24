@@ -124,7 +124,7 @@
 <style>
 /*---------------------------------------------------*/
 
-.carousel-inner .ad1 .carousel-caption {
+.carousel-inner .ad1 .carousel-caption p {
     margin-bottom: none;
     position: static;
     width: 100%;

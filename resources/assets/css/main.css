@@ -21,7 +21,7 @@ body {
 }
 .carousel-inner .item {
     width: 100%;
-    height: 94vh;
+    height: 94vh !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
