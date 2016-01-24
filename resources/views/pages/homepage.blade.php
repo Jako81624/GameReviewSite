@@ -131,10 +131,10 @@
     height: 100%;
 }
 .carousel-inner .ad1 .carousel-caption p {
-    padding-top: 5%;
-    padding-right: 20%;
-    padding-bottom: 10%;
-    padding-left: 1%;*/
+    padding-top: 3%;
+    padding-right: 40%;
+    padding-bottom: 40%;
+    padding-left: 6%;*/
 
 }
 
@@ -143,7 +143,7 @@
 }*/
 
 /*---------------------------------------------------*/
-
+/*
 .carousel-inner .ad2 .carousel-caption {
     margin-bottom: none;
     position: static;
@@ -158,9 +158,9 @@
 .ad2 {
     background: url(/Carousel/BindingOfIsaac/1.jpg) no-repeat center center fixed;
 }
-
+*/
 /*---------------------------------------------------*/
-
+/*
 .carousel-inner .ad3 .carousel-caption {
     margin-bottom: none;
     position: static;
@@ -175,9 +175,9 @@
 .ad3 {
     background: url(/Carousel/RocketLeague/3.jpg) no-repeat center center fixed;
 }
-
+*/
 /*---------------------------------------------------*/
-
+/*
 .carousel-inner .ad4 .carousel-caption {
     margin-bottom: none;
     position: static;
@@ -192,7 +192,7 @@
 .ad4 {
     background: url(/Carousel/RelicHuntersZero/2.jpg) no-repeat center center fixed;
 }
-
+*/
 /*---------------------------------------------------*/
 </style>
 @endsection
