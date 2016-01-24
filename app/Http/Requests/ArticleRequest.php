@@ -21,7 +21,7 @@ class ArticleRequest extends Request
      *
      * @return array
      */
-    public function rules(Request $request)
+    public function rules()
     {
         switch($this->method())
         {
@@ -37,7 +37,7 @@ class ArticleRequest extends Request
             {
                 return [
                     'title' => 'required',
-                    'slug'  => 'required|max:32|unique:articles,slug,'.$request->get('id'),
+                    'slug'  => 'required|max:32|unique:articles,slug,'.Request::get('id'),
                     'conclusion_md' => 'required',
                 ];
             }
