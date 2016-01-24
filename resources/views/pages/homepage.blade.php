@@ -136,9 +136,9 @@
 
 }
 
-.ad1 {
+/*.ad1 {
     background: url(/Carousel/JC3.jpg) no-repeat center center fixed;
-}
+}*/
 
 /*---------------------------------------------------*/
 
