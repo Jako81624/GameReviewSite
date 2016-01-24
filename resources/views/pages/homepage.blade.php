@@ -123,7 +123,7 @@
 
 <style>
 /*---------------------------------------------------*/
-.carousel-inner {
+.carousel-inner p {
     height: 94vh;
 }
 .carousel-inner .ad1 .carousel-caption {
