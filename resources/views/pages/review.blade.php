@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-4">
 					@if($store == 'steam' && isset($store_app_id))
-						<iframe src="http://store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="100%" height="190"></iframe>
+						<iframe src="//store.steampowered.com/widget/{{$store_app_id}}" frameborder="0" width="100%" height="190"></iframe>
 					@endif
 					@if(isset($subreddit))
 						<div id="reddit">
