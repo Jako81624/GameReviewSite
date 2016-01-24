@@ -131,10 +131,10 @@
     height: 100%;
 }
 .carousel-inner .ad1 .carousel-caption p {
-    padding-top: 10%;
+/*    padding-top: 10%;
     padding-left: 55%;
     padding-bottom: 20%;
-    padding-right: 10%;
+    padding-right: 10%;*/
 
 }
 
