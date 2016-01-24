@@ -109,4 +109,77 @@
             </div>
         </div>
     </div>
+
+<style>
+/*---------------------------------------------------*/
+
+.carousel-inner .ad1 .carousel-caption {
+    margin-bottom: none;
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 55%;
+    padding-bottom: 20%;
+    padding-right: 10%;
+
+}
+
+.ad1 {
+    background: url(/Carousel/JC3.jpg) no-repeat center center fixed;
+}
+
+/*---------------------------------------------------*/
+
+.carousel-inner .ad2 .carousel-caption {
+    margin-bottom: none;
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 55%;
+    padding-bottom: 20%;
+    padding-right: 10%;
+}
+
+.ad2 {
+    background: url(/Carousel/BindingOfIsaac/1.jpg) no-repeat center center fixed;
+}
+
+/*---------------------------------------------------*/
+
+.carousel-inner .ad3 .carousel-caption {
+    margin-bottom: none;
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+    padding-right: 55%;
+}
+
+.ad3 {
+    background: url(/Carousel/RocketLeague/3.jpg) no-repeat center center fixed;
+}
+
+/*---------------------------------------------------*/
+
+.carousel-inner .ad4 .carousel-caption {
+    margin-bottom: none;
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+    padding-right: 55%;
+}
+
+.ad4 {
+    background: url(/Carousel/RelicHuntersZero/2.jpg) no-repeat center center fixed;
+}
+
+/*---------------------------------------------------*/
+</style>
 @endsection
