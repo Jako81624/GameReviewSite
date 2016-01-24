@@ -123,7 +123,9 @@
 
 <style>
 /*---------------------------------------------------*/
-
+.carousel-inner {
+    height: 94vh;
+}
 .carousel-inner .ad1 .carousel-caption {
     margin-bottom: none;
     position: static;
@@ -131,9 +133,9 @@
     height: 100%;
 }
 .carousel-inner .ad1 .carousel-caption p {
-    padding-top: 8%;
+    padding-top: 0%;
     padding-right: 40%;
-    padding-bottom: 5%;
+    padding-bottom: 40%;
     padding-left: 6%;*/
 
 }
