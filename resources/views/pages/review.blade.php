@@ -60,7 +60,7 @@
                 <div class="row">
 
 					@allows('article.admin')
-    				<div class="col-md-4">
+    				<div class="col-md-12">
         				<div class="media">
             				<a class="pull-left" href="#">
                 				<img class="media-object dp img-circle" src="//cdn.ocgr.io/Hn5A0D9saHSp16p7.png" style="width: 100px;height:100px;">
