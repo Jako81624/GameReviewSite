@@ -12,7 +12,7 @@
         <div class="carousel-inner">
             @foreach($jakoistrash as $key=>$ads)
             <div class="item ad1 @if($key == 0) active @endif ">
-                <div class="carousel-caption right">
+                <div class="carousel-caption">
                 <img src="{{$ads->temporary_jumbo_image}}" alt="...">
                     <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
                     <p>{!!$ads->intro!!}!</p>
@@ -136,9 +136,9 @@
 
 }
 
-.ad1 {
+/*.ad1 {
     background: url(/Carousel/JC3.jpg) no-repeat center center fixed;
-}
+}*/
 
 /*---------------------------------------------------*/
 
