@@ -13,9 +13,9 @@
             @foreach($jakoistrash as $key=>$ads)
             <div class="item ad1 @if($key == 0) active @endif ">
                 <div class="carousel-caption">
+                <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
+                <p>{!!$ads->intro!!}!</p>
                 <img src="{{$ads->temporary_jumbo_image}}" alt="...">
-                    <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
-                    <p>{!!$ads->intro!!}!</p>
                 </div>
             </div>
             @endforeach
