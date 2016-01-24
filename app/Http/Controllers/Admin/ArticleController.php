@@ -70,13 +70,16 @@ class ArticleController extends BackendController
         $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
         $article->save();
         $screenshots = array();
-        foreach($request->input('screenshot') as $key=>$screenshot)
-        {
-            $screenshots[$key]['image_id'] = $screenshot;
-            $screenshots[$key]['article_id'] = $article->id;
-            $screenshots[$key]['ip_address'] = $request->getClientIp();
+		if(isset($request->input('screenshot')))
+		{
+			foreach($request->input('screenshot') as $key=>$screenshot)
+			{
+				$screenshots[$key]['image_id'] = $screenshot;
+				$screenshots[$key]['article_id'] = $article->id;
+				$screenshots[$key]['ip_address'] = inet_pton($request->getClientIp());
 
-        }
+			}
+		}
         ArticleScreenshot::insert($screenshots);
         return redirect()->action('ArticleController@show', [$article->slug]);
     }
@@ -139,13 +142,16 @@ class ArticleController extends BackendController
             $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
             $article->save();
             $screenshots = array();
-            foreach($request->input('screenshot') as $key=>$screenshot)
-            {
-                $screenshots[$key]['image_id'] = $screenshot;
-                $screenshots[$key]['article_id'] = $article->id;
-                $screenshots[$key]['ip_address'] = inet_pton($request->getClientIp());
+			if(isset($request->input('screenshot')))
+			{
+				foreach($request->input('screenshot') as $key=>$screenshot)
+				{
+					$screenshots[$key]['image_id'] = $screenshot;
+					$screenshots[$key]['article_id'] = $article->id;
+					$screenshots[$key]['ip_address'] = inet_pton($request->getClientIp());
 
-            }
+				}
+			}
             ArticleScreenshot::insert($screenshots);
 			return redirect()->action('ArticleController@show', [$article->slug]);
 
