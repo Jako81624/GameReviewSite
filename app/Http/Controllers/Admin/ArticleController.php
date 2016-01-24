@@ -56,6 +56,7 @@ class ArticleController extends BackendController
         $article->store_app_id = $request->input('store_app_id');
         $article->subreddit = $request->input('subreddit');
         $article->score = $request->input('score');
+		$article->titletext = $request->input('titletext');
         $article->score_text_md = $request->input('score_text_md');
         $article->gameplay_md = $request->input('gameplay_md');
         $article->story_md = $request->input('story_md');
@@ -127,6 +128,7 @@ class ArticleController extends BackendController
             $article->store_app_id = $request->input('store_app_id');
             $article->subreddit = $request->input('subreddit');
             $article->score = $request->input('score');
+			$article->titletext = $request->input('titletext');
             $article->score_text_md = $request->input('score_text_md');
             $article->gameplay_md = $request->input('gameplay_md');
             $article->story_md = $request->input('story_md');

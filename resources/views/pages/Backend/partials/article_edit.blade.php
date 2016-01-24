@@ -11,6 +11,14 @@
             <span class="help-block">Whats the title of your piece of art?</span>
         </div>
     </div>
+	
+	<div class="form-group col-md-12">
+        {!! Form::label('titletext', 'Title Text', array('class' => 'col-md-2')) !!}
+        <div class="col-md-8">
+            {!! Form::text('titletext', null, ['class' => 'form-control input-md']) !!}
+            <span class="help-block">What shall be the tldr be?</span>
+        </div>
+    </div>
 
     <!-- Text input-->
     <div class="form-group col-md-12">
