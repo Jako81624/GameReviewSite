@@ -131,14 +131,14 @@
 }
 
 .carousel-inner .ad1 .carousel-caption p {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-right: 50%;
     /*padding-bottom: 40%;*/
     padding-left: 6%;
     text-shadow: 1px 1px #000;
 }
 .carousel-inner .ad1 .carousel-caption h1 {
-    padding-top: 80px;
+    padding-top: 85px;
     padding-right: 50%;
     /*padding-bottom: 40%;*/
     padding-left: 6%;
