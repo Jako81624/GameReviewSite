@@ -129,10 +129,12 @@
     position: static;
     width: 100%;
     height: 100%;
-/*    padding-top: 10%;
+}
+.carousel-inner .ad1 .carousel-caption p {
+    padding-top: 10%;
     padding-left: 55%;
     padding-bottom: 20%;
-    padding-right: 10%;*/
+    padding-right: 10%;
 
 }
 
