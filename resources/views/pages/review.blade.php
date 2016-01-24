@@ -62,16 +62,15 @@
 						@endif
 					@endif
 
-				@allows('article.admin')
                 <div class="row">
     				<div class="col-md-12">
         				<div class="media">
-            				<a class="pull-left" href="#">
+            				<a class="pull-left" @if(isset($writer['homepage']) && $writer['homepage']!="")href="{{$writer['homepage']}}"@endif>
                 				<img class="media-object dp img-circle" src="{{$writer['image']}}" style="width: 100px;height:100px;">
             				</a>
             				<div class="media-body">
                 				<h4 class="media-heading">{{$user['name']}} <small>{{$writer['country']}}</small></h4>
-                				<h5>Role @if(isset($writer['homepage']) && $writer['homepage']!="")<a href="{{$writer['homepage']}}">{{$writer['homepage']}}</a>@endif</h5>
+                				<h5><!-- fucking role--> @if(isset($writer['homepage']) && $writer['homepage']!="")<a href="{{$writer['homepage']}}">{{$writer['homepage']}}</a>@endif</h5>
                 				<hr style="margin:8px auto">
 
                 				@if(isset($writer['reddit']) && $writer['reddit']!="")<span class="label label-info"><a href="http://reddit.com/u/{{$writer['reddit']}}">reddit</a></span>@endif
@@ -82,8 +81,7 @@
         				</div>
     				</div>
 
-				</div>
-                    @endallows				
+				</div>		
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">
