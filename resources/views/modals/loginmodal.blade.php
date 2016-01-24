@@ -21,6 +21,7 @@
                             </div>
                             <input id="login_email" class="form-control" name="email" type="text" placeholder="E-Mail" required>
                             <input id="login_password" class="form-control" name="password" type="password" placeholder="Password" required>
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox" id="login_remember" name="remember"> Remember me
