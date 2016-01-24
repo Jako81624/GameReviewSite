@@ -10,7 +10,18 @@
         </ol>
         <!-- Carousel items -->
         <div class="carousel-inner">
-            <div class="item active ad1">
+            @foreach($jakoistrash as $key=>$ads)
+            <div class="item ad1 @if($key == 0) active @endif ">
+                <div class="carousel-caption right">
+                <img src="{{$ads->temporary_jumbo_image}}" alt="...">
+                    <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
+                    <p>{!!$ads->intro!!}!</p>
+                </div>
+            </div>
+
+
+
+            <!--<div class="item active ad1">
                 <div class="carousel-caption">
                     <a href="/games/jc3" style="color:inherit"><h1>Just Cause 3</h1></a>
                     <p>We go hands-on with Avalanche Studio's latest Open-World Explosion Simulator!</p>
@@ -42,7 +53,7 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div>-->
     </div>
 
     <div id="latest" class="container-fluid">
