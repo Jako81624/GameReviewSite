@@ -37,13 +37,13 @@ class ImageController extends BackendController
         return $return;
     }
 
-    protected function makeImage($file, $width, $height, $randomFilename, $thumbnail=null)
+    protected function makeImage($file, $height, $width, $randomFilename, $thumbnail=null)
     {
         $md5 = md5_file($file->getRealPath());
         if($thumbnail != null)
-            $img = Image::make($file)->resize($width);
+            $img = Image::make($file)->resize($height);
         else
-            $img = Image::make($file)->fit($width, $height);
+            $img = Image::make($file)->fit($height, $width);
         $path = 'images/';
         if($thumbnail != null)
             $path = 'images/thumb/';
