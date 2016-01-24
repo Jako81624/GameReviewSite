@@ -49,8 +49,10 @@
 					@allows('article.edit')
 						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit</a><br />
 					@endallows
-					@if(Auth::user()->id == $user_id AND $published == 0 AND app('Permissions')->check('article.editown'))
-						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit Before Publishing</a><br />
+					@if(Auth::check())
+						@if(Auth::user()->id == $user_id AND $published == 0 AND app('Permissions')->check('article.editown'))
+							<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit Before Publishing</a><br />
+						@endif
 					@endif
                     @allows('article.admin')
 					<h3>Administration</h3>
