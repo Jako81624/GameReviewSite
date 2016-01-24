@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h1>New Article, {{Auth::user()->name}}?</h1>
-                {!! Form::open(['action' => ['Admin\ArticleController@store']]) !!}
+                {!! Form::open(['action' => ['Admin\ArticleController@store'], 'class' => 'articleForm']) !!}
                     @include('pages.Backend.partials.article_edit')
                 </form>
             </div>

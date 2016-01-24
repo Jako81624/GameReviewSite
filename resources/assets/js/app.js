@@ -20,4 +20,21 @@ $(document).ready(function() {
         }
 
     });
+    $("div#imageScreenshotUploadDroparea").dropzone({
+        url: "/admin/uploadImage",
+        headers: {
+            'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+        },
+        init: function(){
+            this.on('success', function(file, response){
+                console.log(response.fullsize.id);
+                $('<input>').attr({
+                    type: 'hidden',
+                    name: 'screenshot[]',
+                    value: response.fullsize.id
+                }).appendTo('.articleForm');
+            })
+        }
+
+    });
 });

@@ -10,4 +10,9 @@ class Article extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function screenshot()
+    {
+        return $this->hasMany('App\ArticleScreenshot', 'article_id', 'id');
+    }
 }

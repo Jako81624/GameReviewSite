@@ -35,6 +35,13 @@
 					
 					<h2 id="Screenshots">Screenshots</h2>
 					{!!$screenshots!!}
+					@foreach($screenshot as $screen)
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="//{{env('APP_CDN_DOMAIN')}}/{{$screen['image']['file']}}"><img src="//{{env('APP_CDN_DOMAIN')}}/thumb/{{$screen['image']['thumbnail_file']}}"></a>
+							</div>
+						</div>
+					@endforeach
                 </div>
                 <div class="col-md-4">
 					@if($store == 'steam' && isset($store_app_id))
