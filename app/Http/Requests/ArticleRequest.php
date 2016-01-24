@@ -23,10 +23,25 @@ class ArticleRequest extends Request
      */
     public function rules()
     {
-        return [
-            'title' => 'required',
-            'slug'  => 'required|max:32|unique:articles',
-            'conclusion_md' => 'required',
-        ];
+        switch($this->method())
+        {
+            case 'POST':
+            {
+                return [
+                    'title' => 'required',
+                    'slug'  => 'required|max:32|unique:articles',
+                    'conclusion_md' => 'required',
+                ];
+            }
+            case 'PATCH':
+            {
+                return [
+                    'title' => 'required',
+                    'slug'  => 'required|max:32|unique:articles,slug,'.$request->get('id'),
+                    'conclusion_md' => 'required',
+                ];
+            }
+            default:break;
+        }
     }
 }
