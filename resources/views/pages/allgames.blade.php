@@ -8,7 +8,6 @@
 		<h1 id="Home">Games List</h1>
 	</div>
 </div>
-<?php $i=1 ?>
 <div id="gamelist">
 <div class="container">
 
