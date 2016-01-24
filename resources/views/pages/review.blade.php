@@ -29,9 +29,9 @@
 					{!!$graphics!!}
 					<h2 id="Conclusion">Conclusion</h2>
 					{!!$conclusion!!}
-					<h2>--------------------------------------</h2>
+					<p></p>
 					<h2>Rating: {!!$score!!}/10 - {!!$score_text!!}</h2>
-					<h2>--------------------------------------</h2>
+					<p></p>
 					
 					<h2 id="Screenshots">Screenshots</h2>
 					{!!$screenshots!!}
@@ -46,7 +46,7 @@
 						</div>
 					@endif
 					Article By: {{$user['name']}}<br/>
-<<<<<<< HEAD
+
 					@allows('article.edit')
 						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit</a><br />
 					@endallows
@@ -71,10 +71,10 @@
                 </div>
 
                 <div class="row">
-=======
-					
+
+					@allows('article.admin')
 					<div class="row">
->>>>>>> proposed
+
 
     				<div class="col-md-4">
         				<div class="media">
@@ -95,7 +95,8 @@
     				</div>
 
 				</div>
-
+				@endallows
+				
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">
