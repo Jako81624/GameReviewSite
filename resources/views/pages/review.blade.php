@@ -52,7 +52,6 @@
 							<script src="https://www.reddit.com/r/{{$subreddit}}/top/.embed?limit=5&t=day"></script>
 						</div>
 					@endif
-					Article By: {{$user['name']}}<br/>
 
 					@allows('article.edit')
 						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit</a><br />
@@ -63,31 +62,28 @@
 						@endif
 					@endif
 
-
+				@allows('article.admin')
                 <div class="row">
-
-					@allows('article.admin')
     				<div class="col-md-12">
         				<div class="media">
             				<a class="pull-left" href="#">
-                				<img class="media-object dp img-circle" src="//cdn.ocgr.io/Hn5A0D9saHSp16p7.png" style="width: 100px;height:100px;">
+                				<img class="media-object dp img-circle" src="{{$writer['image']}}" style="width: 100px;height:100px;">
             				</a>
             				<div class="media-body">
-                				<h4 class="media-heading">Name <small> Country</small></h4>
-                				<h5>Role <a href="http://gridle.in">OCGR.io</a></h5>
+                				<h4 class="media-heading">{{$user['name']}} <small>{{$writer['country']}}</small></h4>
+                				<h5>Role @if(isset($writer['homepage']) && $writer['homepage']!="")<a href="{{$writer['homepage']}}">{{$writer['homepage']}}</a>@endif</h5>
                 				<hr style="margin:8px auto">
 
-                				<span class="label label-default">Roleshithere</span>
-                				<span class="label label-default">Roleshithere</span>
-                				<span class="label label-info">Roleshithere</span>
-                				<span class="label label-default">Roleshithere</span>
+                				@if(isset($writer['reddit']) && $writer['reddit']!="")<span class="label label-info"><a href="http://reddit.com/u/{{$writer['reddit']}}">reddit</a></span>@endif
+								@if(isset($writer['twitter']) && $writer['twitter']!="")<span class="label label-info"><a href="http://twitter.com/{{$writer['twitter']}}">{{'@'.$writer['twitter']}}</a></span>@endif
+                				@if(isset($writer['youtube']) && $writer['youtube']!="")<span class="label label-info"><a href="{{$writer['youtube']}}">YouTube</a></span>@endif
+                				@if(isset($writer['steam']) && $writer['steam']!="")<span class="label label-info"><a href="{{$writer['steam']}}">Steam</a></span>@endif
             				</div>
         				</div>
     				</div>
 
 				</div>
-				@endallows
-				
+                    @endallows				
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">

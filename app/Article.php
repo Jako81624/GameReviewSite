@@ -10,6 +10,11 @@ class Article extends Model
     {
         return $this->belongsTo('App\User');
     }
+	
+	public function writer()
+    {
+        return $this->hasOne('App\Writer', 'user_id', 'user_id');
+    }
 
     public function screenshot()
     {
