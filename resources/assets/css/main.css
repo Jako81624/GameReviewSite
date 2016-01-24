@@ -82,6 +82,8 @@ p {
 	height: 60px;
 	background-color: #222;
 	border-color: transparent;
+	display: inline;
+	vertical-align: top;
 }
 .navbar-fixed-bottom p {
 	color: #fff;
@@ -89,6 +91,9 @@ p {
 	padding-top: 18px;
 	font-size: 14px !important;
 }
+
+/*---------------------------------------------------*/
+
 .btn-primary {
 	background-color: #333;
 	border-color: #333;
