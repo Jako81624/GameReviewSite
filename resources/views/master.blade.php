@@ -6,7 +6,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{ elixir('css/all.css') }}" rel="stylesheet" type="text/css">
 	@yield('head')
-    <script src="{{ elixir('js/all.js') }}"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <nav class="navbar navbar-inverse navbar-fixed-top top-test">
@@ -22,7 +21,7 @@
 <!--<footer class="footer">
 	<p>Open Source and Unlicensed</p>
 </footer>-->
-
+    <script src="{{ elixir('js/all.js') }}"></script>
 </body>
 </html>
 

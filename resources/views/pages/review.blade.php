@@ -38,7 +38,7 @@
 					@foreach($screenshot as $screen)
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="//{{env('APP_CDN_DOMAIN')}}/{{$screen['image']['file']}}"><img src="//{{env('APP_CDN_DOMAIN')}}/thumb/{{$screen['image']['thumbnail_file']}}"></a>
+								<a data-lightbox="screenies" href="//{{env('APP_CDN_DOMAIN')}}/{{$screen['image']['file']}}"><img src="//{{env('APP_CDN_DOMAIN')}}/thumb/{{$screen['image']['thumbnail_file']}}"></a>
 							</div>
 						</div>
 					@endforeach
