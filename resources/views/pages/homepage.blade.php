@@ -15,7 +15,12 @@
                 <div class="carousel-caption">
                 <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
                 <p>{!!$ads->intro!!}!</p>
-                <img src="{{$ads->temporary_jumbo_image}}" alt="...">
+                <style>
+                .ad1 {
+                    background: url({{$ads->temporary_jumbo_image}}) no-repeat center center fixed;
+                }
+                </style>
+                <!--<img src="{{$ads->temporary_jumbo_image}}" alt="...">-->
                 </div>
             </div>
             @endforeach
