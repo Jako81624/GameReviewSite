@@ -21,7 +21,7 @@ class HomeController extends Controller
     {
         $data['articles'] = Article::orderBy('id', 'desc')->where('published', 1)->take(6)->get();
 		$data['jakoistrash'] = Article::orderBy('id', 'desc')->where('titletext', '!=', '')->where('published', 1)->where('featured', 1)->take(4)->get();
-		$data['writers'] = DB::table('writers')->orderByRaw("RAND()")->join('users', 'users.id', '=', 'writers.id')->get();
+		$data['writers'] = DB::table('writers')->orderByRaw("RAND()")->join('users', 'users.id', '=', 'writers.user_id')->get();
         return view('pages.homepage', $data);
     }
 }
