@@ -131,7 +131,7 @@
 }
 
 .carousel-inner .ad1 .carousel-caption p {
-    /*padding-top: 0%;*/
+    padding-top: 50px;
     padding-right: 50%;
     /*padding-bottom: 40%;*/
     padding-left: 6%;
