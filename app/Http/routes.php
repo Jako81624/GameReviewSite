@@ -32,3 +32,8 @@ Route::get('/contact', function () {
 Route::get('/news', function () {
     return view('pages.news');
 });
+
+//DEBUG
+Route::group(['middleware' => 'debug'], function() {
+	Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+});

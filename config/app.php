@@ -154,7 +154,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        'GrahamCampbell\Markdown\MarkdownServiceProvider'
+        'GrahamCampbell\Markdown\MarkdownServiceProvider',
+		Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
 
     ],
