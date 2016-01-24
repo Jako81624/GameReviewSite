@@ -138,7 +138,7 @@
     text-shadow: 1px 1px #000;
 }
 .carousel-inner .ad1 .carousel-caption h1 {
-    padding-top: 85px;
+    padding-top: 90px;
     padding-right: 50%;
     /*padding-bottom: 40%;*/
     padding-left: 6%;
