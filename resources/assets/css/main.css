@@ -118,3 +118,10 @@ p {
 	margin-top: 50px;
 	margin-bottom: 50px;
  }
+
+#latest h3 {
+	font-family: "Quicksand" !important;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
