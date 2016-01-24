@@ -16,7 +16,7 @@
                 <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
                 <p>{!!$ads->intro!!}!</p>
                 <style>
-                .item {
+                .carousel-caption {
                     background: url({{$ads->temporary_jumbo_image}}) no-repeat center center fixed;
                 }
                 </style>
