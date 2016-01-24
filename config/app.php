@@ -12,8 +12,15 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
+    'env' => env('APP_ENV', 'production'),
+    'debug' => value(function(){
+        if ((isset($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR']  == env('APP_DEBUG_IP')) OR  env('APP_DEBUG'))
+        {
+            return true;
+        }
 
-    'debug' => env('APP_DEBUG', false),
+        return false;
+    }),
 
     /*
     |--------------------------------------------------------------------------
@@ -113,13 +120,11 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
-        Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
         Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
-        Illuminate\Routing\ControllerServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
         Illuminate\Encryption\EncryptionServiceProvider::class,
@@ -147,6 +152,10 @@ return [
         App\Providers\RouteServiceProvider::class,
         HieuLe\Active\ActiveServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Clockwork\Support\Laravel\ClockworkServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        'GrahamCampbell\Markdown\MarkdownServiceProvider'
+
 
     ],
 
@@ -196,10 +205,14 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-		'Debugbar' => Barryvdh\Debugbar\Facade::class,
 		'Bouncer'   => Silber\Bouncer\BouncerFacade::class,
         'Active' => HieuLe\Active\Facades\Active::class,
-        'Image' => 'Intervention\Image\Facades\Image'
+        'Image' => 'Intervention\Image\Facades\Image',
+        'Clockwork' => 'Clockwork\Support\Laravel\Facade',
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Markdown' => 'GrahamCampbell\Markdown\Facades\Markdown'
+
 
     ],
 

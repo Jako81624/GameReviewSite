@@ -20,6 +20,7 @@
                 <div class="col-md-8">
                     @allows('article.admin')
                     @endallows
+					{!!$intro!!}
 					<h2 id="Gameplay">Gameplay</h2>
                     {!!$gameplay!!}
 					<h2 id="Story">Story</h2>
@@ -45,6 +46,12 @@
 						</div>
 					@endif
 					Article By: {{$user['name']}}<br/>
+					@allows('article.edit')
+						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit</a><br />
+					@endallows
+					@if(Auth::user()->id == $user_id AND $published == 0 AND app('Permissions')->check('article.editown'))
+						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit Before Publishing</a><br />
+					@endif
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">

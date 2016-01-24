@@ -54,9 +54,9 @@ $(function() {
                 return false;
                 break;
             default:
-                return false;
+                return true;
         }
-        return false;
+        return true;
     });
     
     $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
