@@ -43,7 +43,7 @@ class ImageController extends BackendController
         if($thumbnail != null)
             $img = Image::make($file)->resize($height, $width);
         else
-            $img = Image::make($file)->crop($height, $width);
+            $img = Image::make($file)->fit($height, $width);
         $path = 'images/';
         if($thumbnail != null)
             $path = 'images/thumb/';
