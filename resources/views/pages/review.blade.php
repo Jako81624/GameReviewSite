@@ -60,9 +60,6 @@
                 <div class="row">
 
 					@allows('article.admin')
-					<div class="row">
-
-
     				<div class="col-md-4">
         				<div class="media">
             				<a class="pull-left" href="#">
