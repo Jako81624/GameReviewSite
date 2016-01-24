@@ -21,7 +21,7 @@ class ArticleRequest extends Request
      *
      * @return array
      */
-    public function rules()
+    public function rules(Request $request)
     {
         switch($this->method())
         {
