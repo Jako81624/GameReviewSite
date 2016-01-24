@@ -15,6 +15,12 @@
 	</div>
 </div>
 
+<style>
+.container p {
+	padding-bottom: 200px;
+}
+</style>
+
 <div class="container">
 	<h3>First Update</h3>
 	<p>This is the first update.  We are working on this initial rollout.</p>

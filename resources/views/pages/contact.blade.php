@@ -14,6 +14,12 @@
 	</div>
 </div>
 
+<style>
+.container {
+	padding-bottom: 200px;
+}
+</style>
+
 <div class="container">
 	<h3>General Enquiries</h3>
 	<p>For general enquiries you can contact us at: enquiries@ocgr.com</p>
