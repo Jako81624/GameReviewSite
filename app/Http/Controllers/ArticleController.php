@@ -54,7 +54,7 @@ class ArticleController extends Controller
     {
         if($article->published == false)
         {
-            if(!Permissions::check('article.view-unpublished') AND $article->user_id != Auth::user()->id)
+            if(Auth::check() AND !Permissions::check('article.view-unpublished') AND $article->user_id != Auth::user()->id)
             {
                 abort(403);
             }
