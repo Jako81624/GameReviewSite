@@ -61,7 +61,6 @@ class ImageController extends BackendController
             $image->md5_hash = $md5;
         }else{
             Clockwork::info('Thumbnail Updated');
-            $image = $thumbnail;
             $image->thumbnail_file = $randomFilename . '.png';
         }
         $image->save();
