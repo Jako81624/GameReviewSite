@@ -131,6 +131,7 @@
 }
 
 .carousel-inner .ad1 .carousel-caption p {
+    font-size: 24px !important;
     padding-top: 15px;
     padding-right: 50%;
     /*padding-bottom: 40%;*/
