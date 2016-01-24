@@ -37,7 +37,7 @@ class ArticleRequest extends Request
             {
                 return [
                     'title' => 'required',
-                    'slug'  => 'required|max:32|unique:articles,slug,'.Request::get('id'),
+                    'slug'  => 'required|max:32|unique:articles,slug,'.$this->articles->id,
                     'conclusion_md' => 'required',
                 ];
             }
