@@ -122,7 +122,7 @@ p {
 	margin-bottom: 50px;
  }
  .carousel-inner .carousel-caption {
-	text-shadow: 0 0 20px black;
+	text-shadow: 2px 2px 4px black;
     height: 100%;
     padding-top: 10%;
     padding-bottom: 20%;
