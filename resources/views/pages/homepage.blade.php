@@ -11,15 +11,10 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
             @foreach($jakoistrash as $key=>$ads)
-            <div class="item ad1 @if($key == 0) active @endif ">
+            <div class="item ad1 @if($key == 0) active @endif " style="background: url({{$ads->temporary_jumbo_image}}) no-repeat center center fixed;">
                 <div class="carousel-caption">
                 <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
                 <p>{!!$ads->intro!!}!</p>
-                <style>
-                .carousel-caption {
-                    background: url({{$ads->temporary_jumbo_image}}) no-repeat center center fixed;
-                }
-                </style>
                 <!--<img src="{{$ads->temporary_jumbo_image}}" alt="...">-->
                 </div>
             </div>
