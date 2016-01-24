@@ -13,7 +13,7 @@ class FeaturedFieldOnArticles extends Migration
     public function up()
     {
         Schema::table('articles', function ($table) {
-            $table->text('featured');
+            $table->int('featured');
         });
     }
 
