@@ -46,22 +46,8 @@
 						</div>
 					@endif
 					Article By: {{$user['name']}}<br/>
-                    @allows('article.admin')
-					<h3>Administration</h3>
-					<table class="table table-condensed table-hover" style="width: 60%">
-						<tr><th>Property</th><th>Value</th></tr>
-						<tr><td>ID</td><td>{{$id}}</td></tr>
-						<tr><td>SLUG</td><td>{{$slug}}</td></tr>
-						<tr><td>STORE</td><td>{{$store or 'N/A'}}</td></tr>
-						<tr><td>APPID</td><td>{{$store_app_id or 'N/A'}} <a href="http://store.steampowered.com/app/{{$store_app_id or '0'}}/" target="_blank">view</a></td></tr>
-						<tr><td>REDDIT</td><td>{{$subreddit or 'N/A'}}</td></tr>
-						<tr><td>PUBLIC</td><td>{{$published}}</td></tr>
-						<tr><td>CREATED</td><td>{{$created_at}}</td></tr>
-					</table>
-                    @endallows
-                </div>
-
-                <div class="row">
+					
+					<div class="row">
 
     				<div class="col-md-4">
         				<div class="media">
@@ -82,6 +68,21 @@
     				</div>
 
 				</div>
+
+                    @allows('article.admin')
+					<h3>Administration</h3>
+					<table class="table table-condensed table-hover" style="width: 60%">
+						<tr><th>Property</th><th>Value</th></tr>
+						<tr><td>ID</td><td>{{$id}}</td></tr>
+						<tr><td>SLUG</td><td>{{$slug}}</td></tr>
+						<tr><td>STORE</td><td>{{$store or 'N/A'}}</td></tr>
+						<tr><td>APPID</td><td>{{$store_app_id or 'N/A'}} <a href="http://store.steampowered.com/app/{{$store_app_id or '0'}}/" target="_blank">view</a></td></tr>
+						<tr><td>REDDIT</td><td>{{$subreddit or 'N/A'}}</td></tr>
+						<tr><td>PUBLIC</td><td>{{$published}}</td></tr>
+						<tr><td>CREATED</td><td>{{$created_at}}</td></tr>
+					</table>
+                    @endallows
+                </div>
 
             </div>
         </div>
