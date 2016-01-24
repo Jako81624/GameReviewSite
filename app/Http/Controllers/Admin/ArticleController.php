@@ -70,7 +70,7 @@ class ArticleController extends BackendController
         $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
         $article->save();
         $screenshots = array();
-		if(isset($request->input('screenshot')))
+		if($request->input('screenshot') != null)
 		{
 			foreach($request->input('screenshot') as $key=>$screenshot)
 			{
@@ -142,7 +142,7 @@ class ArticleController extends BackendController
             $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
             $article->save();
             $screenshots = array();
-			if(isset($request->input('screenshot')))
+			if($request->input('screenshot') != null)
 			{
 				foreach($request->input('screenshot') as $key=>$screenshot)
 				{
