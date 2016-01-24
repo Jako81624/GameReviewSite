@@ -52,6 +52,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
+        //dd($article->screenshot->image);
         if($article->published == false)
         {
             if(!Auth::check() OR (!Permissions::check('article.view-unpublished') AND $article->user_id != Auth::user()->id))

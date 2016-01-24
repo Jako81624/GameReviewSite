@@ -30,6 +30,7 @@ body p {
 	padding-top: 100px;
 	color: #fff;
 	font-weight: bold;
+	text-shadow: 2px 2px black;
 }
 #review .container {
 	padding-bottom: 150px;

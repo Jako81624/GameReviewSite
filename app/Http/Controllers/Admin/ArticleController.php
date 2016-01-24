@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Article;
+use App\ArticleScreenshot;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -67,8 +68,19 @@ class ArticleController extends BackendController
         $article->story = Markdown::convertToHtml($request->input('story_md'));
         $article->graphics = Markdown::convertToHtml($request->input('graphics_md'));
         $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
-        $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
         $article->save();
+        $screenshots = array();
+		if($request->input('screenshot') != null)
+		{
+			foreach($request->input('screenshot') as $key=>$screenshot)
+			{
+				$screenshots[$key]['image_id'] = $screenshot;
+				$screenshots[$key]['article_id'] = $article->id;
+				$screenshots[$key]['ip_address'] = inet_pton($request->getClientIp());
+
+			}
+		}
+        ArticleScreenshot::insert($screenshots);
         return redirect()->action('ArticleController@show', [$article->slug]);
     }
 
@@ -129,6 +141,18 @@ class ArticleController extends BackendController
             $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
             $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
             $article->save();
+            $screenshots = array();
+			if($request->input('screenshot') != null)
+			{
+				foreach($request->input('screenshot') as $key=>$screenshot)
+				{
+					$screenshots[$key]['image_id'] = $screenshot;
+					$screenshots[$key]['article_id'] = $article->id;
+					$screenshots[$key]['ip_address'] = inet_pton($request->getClientIp());
+
+				}
+			}
+            ArticleScreenshot::insert($screenshots);
 			return redirect()->action('ArticleController@show', [$article->slug]);
 
         }

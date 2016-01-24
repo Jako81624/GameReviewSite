@@ -10,30 +10,15 @@
         </ol>
         <!-- Carousel items -->
         <div class="carousel-inner">
-            <div class="item active ad1">
-                <div class="carousel-caption">
-                    <a href="/games/jc3" style="color:inherit"><h1>Just Cause 3</h1></a>
-                    <p>We go hands-on with Avalanche Studio's latest Open-World Explosion Simulator!</p>
+		@foreach($jakoistrash as $key=>$ads)
+            <div class="item ad1 @if($key == 0) active @endif ">
+			    <img style="width:100%; height:100%" src="{{$ads->temporary_jumbo_image}}" alt="...">
+                <div class="carousel-caption right">
+                    <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
+                    {!!$ads->intro!!}!</p>
                 </div>
             </div>
-            <div class="item ad2">
-                <div class="carousel-caption">
-                    <a href="/games/bindingofisaac" style="color:inherit"><h1>The Binding Of Isaac</h1></a>
-                    <p>One of our professional reviewers takes on the masterpiece that is "The Binding Of Isaac"</p>
-                </div>
-            </div>
-            <div class="item ad3">
-                <div class="carousel-caption">
-                    <a href="/games/rocketleague" style="color:inherit"><h1>Rocket League</h1></a>
-                    <p>Another one of our hot shot reviewers takes a look at the juggernaut that is Rocket League</p>
-                </div>
-            </div>
-            <div class="item ad4">
-                <div class="carousel-caption">
-                    <a href="/games/relichunterszero" style="color:inherit"><h1>Relic Hunters Zero</h1></a>
-                    <p>One of our highly skilled reviewers looks over a game I am totally unfamiliar with</p>
-                </div>
-            </div>
+        @endforeach  
             <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -109,77 +94,4 @@
             </div>
         </div>
     </div>
-
-<style>
-/*---------------------------------------------------*/
-
-.carousel-inner .ad1 .carousel-caption {
-    margin-bottom: none;
-    position: static;
-    width: 100%;
-    height: 100%;
-    padding-top: 10%;
-    padding-left: 55%;
-    padding-bottom: 20%;
-    padding-right: 10%;
-
-}
-
-.ad1 {
-    background: url(/Carousel/JC3.jpg) no-repeat center center fixed;
-}
-
-/*---------------------------------------------------*/
-
-.carousel-inner .ad2 .carousel-caption {
-    margin-bottom: none;
-    position: static;
-    width: 100%;
-    height: 100%;
-    padding-top: 10%;
-    padding-left: 55%;
-    padding-bottom: 20%;
-    padding-right: 10%;
-}
-
-.ad2 {
-    background: url(/Carousel/BindingOfIsaac/1.jpg) no-repeat center center fixed;
-}
-
-/*---------------------------------------------------*/
-
-.carousel-inner .ad3 .carousel-caption {
-    margin-bottom: none;
-    position: static;
-    width: 100%;
-    height: 100%;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-bottom: 20%;
-    padding-right: 55%;
-}
-
-.ad3 {
-    background: url(/Carousel/RocketLeague/3.jpg) no-repeat center center fixed;
-}
-
-/*---------------------------------------------------*/
-
-.carousel-inner .ad4 .carousel-caption {
-    margin-bottom: none;
-    position: static;
-    width: 100%;
-    height: 100%;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-bottom: 20%;
-    padding-right: 55%;
-}
-
-.ad4 {
-    background: url(/Carousel/RelicHuntersZero/2.jpg) no-repeat center center fixed;
-}
-
-/*---------------------------------------------------*/
-</style>
 @endsection

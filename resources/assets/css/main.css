@@ -55,6 +55,9 @@ p {
 }
 #latest h3 {
 	font-family: "Quicksand" !important;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #writers {
@@ -118,3 +121,8 @@ p {
 	margin-top: 50px;
 	margin-bottom: 50px;
  }
+ .carousel-inner .carousel-caption {
+	background: -webkit-radial-gradient(black, rgba(0, 0, 0, 0.51), rgba(6, 6, 6, 0));
+	text-shadow: 2px 2px 4px black;
+
+}

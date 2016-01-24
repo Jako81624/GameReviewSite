@@ -67,13 +67,15 @@
     </div>
 
     <!-- Textarea -->
+    @allows('images.upload')
     <div class="form-group col-md-12">
-        {!! Form::label('screenshots_md', 'Screenshots', array('class' => 'col-md-2')) !!}
+        {!! Form::label('screenshots_md', 'Add Screenshots', array('class' => 'col-md-2')) !!}
         <div class="col-md-8">
-            {!! Form::textarea('screenshots_md', null, ['class' => 'form-control', 'data-provide' => 'markdown']) !!}
+            <div id="imageScreenshotUploadDroparea" class="dropzone"></div>
+            <strong>SCREENSHOTS CANNOT YET BE EDITED BY WRITERS</strong>
         </div>
     </div>
-
+    @endallows
 
     <div class="form-group col-md-12">
         {!! Form::label('temporary_jumbo_image', 'jumbo image', array('class' => 'col-md-2')) !!}
