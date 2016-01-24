@@ -124,9 +124,5 @@ p {
  .carousel-inner .carousel-caption {
 	background: -webkit-radial-gradient(black, rgba(0, 0, 0, 0.51), rgba(6, 6, 6, 0));
 	text-shadow: 2px 2px 4px black;
-    height: 100%;
-    padding-top: 10%;
-    padding-bottom: 20%;
-    padding-right: 10%;
 
 }
