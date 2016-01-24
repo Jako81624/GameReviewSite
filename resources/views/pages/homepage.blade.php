@@ -18,7 +18,7 @@
                     <p>{!!$ads->intro!!}!</p>
                 </div>
             </div>
-
+            @endforeach
 
 
             <!--<div class="item active ad1">
