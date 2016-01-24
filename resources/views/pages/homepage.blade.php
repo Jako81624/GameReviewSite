@@ -137,6 +137,13 @@
     padding-left: 6%;
 
 }
+.carousel-inner .ad1 .carousel-caption h1 {
+    padding-top: 50px;
+    padding-right: 50%;
+    /*padding-bottom: 40%;*/
+    padding-left: 6%;
+
+}
 
 /*.ad1 {
     background: url(/Carousel/JC3.jpg) no-repeat center center fixed;
