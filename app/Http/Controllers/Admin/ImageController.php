@@ -41,9 +41,9 @@ class ImageController extends BackendController
     {
         $md5 = md5_file($file->getRealPath());
         if($thumbnail != null)
-            $img = Image::make($file)->resize($height);
+            $img = Image::make($file)->fit  ($height);
         else
-            $img = Image::make($file)->fit($height, $width);
+            $img = Image::make($file)->fit($width, $height);
         $path = 'images/';
         if($thumbnail != null)
             $path = 'images/thumb/';
