@@ -51,8 +51,13 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        if($article->published == false && (!Permissions::check('article.view-unpublished') OR $article->user_id == Auth::user()->id))
-            abort(403);
+        if($article->published == false)
+        {
+            if(!Permissions::check('article.view-unpublished') OR $article->user_id != Auth::user()->id))
+            {
+                abort(403);
+            }
+        }
         return view('pages.review', $article); //Okay before anyone asks, I dont want temporary_* to even exist. I want to use coverid
         //but im under time pressure and ill fix it later, got a query that will fix it up when cover is ready
         //@TODO EVERYTHING
