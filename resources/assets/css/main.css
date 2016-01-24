@@ -55,6 +55,9 @@ p {
 }
 #latest h3 {
 	font-family: "Quicksand" !important;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #writers {
@@ -73,9 +76,6 @@ p {
 }
 #writers h3 {
 	font-family: "Quicksand" !important;
-	text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 
