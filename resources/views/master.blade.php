@@ -15,6 +15,7 @@
     @yield('content')
 <div class="navbar navbar-default navbar-fixed-bottom">
     <p>Open-source and Unlicensed</p>
+    <iframe src="https://ghbtns.com/github-btn.html?user=Jako81624&repo=GameReviewSite&type=fork&count=true" frameborder="0" scrolling="0" width="170px" height="20px" style="float: right; display: inline; margin-top: -27px; margin-right: -60px;"></iframe>
 </div>
     @yield('modals')
 <!--<footer class="footer">
