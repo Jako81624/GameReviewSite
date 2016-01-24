@@ -40,8 +40,8 @@ class ImageController extends BackendController
     protected function makeImage($file, $height, $width, $randomFilename, $thumbnail=null)
     {
         $md5 = md5_file($file->getRealPath());
-        if($thumbnail != null)
-            $img = Image::make($file)->resize($width);
+        if($thumbnail = null)
+            $img = Image::make($file)->resize($height);
         else
             $img = Image::make($file)->resize($height, $width);
         $path = 'images/';
