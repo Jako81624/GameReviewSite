@@ -37,7 +37,7 @@ class ArticleRequest extends Request
             {
                 return [
                     'title' => 'required',
-                    'slug'  => 'required|max:32|unique:articles,slug,'.$this->article->id,
+                    'slug'  => 'required|max:32|unique:articles,slug,'.$this->articleslug->id,
                     'conclusion_md' => 'required',
                 ];
             }
