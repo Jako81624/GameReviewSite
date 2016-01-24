@@ -41,7 +41,7 @@ class ImageController extends BackendController
     {
         $md5 = md5_file($file->getRealPath());
         if($thumbnail != null)
-            $img = Image::make($file)->fit($height, $width);
+            $img = Image::make($file)->resize($height, $width);
         else
             $img = Image::make($file)->crop($height, $width);
         $path = 'images/';
@@ -62,9 +62,9 @@ class ImageController extends BackendController
             $image->height = $height;
             $image->width = $width;
             $image->md5_hash = $md5;
-        }elseif($thumbnail != null){
+        }elseif($thumbnail != null AND $image->thumbnail_file == null){
             Clockwork::info('Thumbnail Updated');
-            //$image->thumbnail_file = $randomFilename . '.png';
+            $image->thumbnail_file = $randomFilename . '.png';
         }
         $image->save();
         return $image;
