@@ -136,6 +136,8 @@
     /*padding-bottom: 40%;*/
     padding-left: 6%;
     text-shadow: 1px 1px #000;
+    outline-style: solid;
+    outline-color: #000;
 }
 .carousel-inner .ad1 .carousel-caption h1 {
     padding-top: 80px;
