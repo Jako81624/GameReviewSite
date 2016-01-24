@@ -13,6 +13,9 @@
                 @allows('images.upload')
                     <li><a href="{{url('/admin/uploadImage')}}">Upload Image</a></li>
                 @endallows
+                @allows('article.create')
+                <li><a href="{{action('Admin\ArticleController@create')}}">Create Article</a></li>
+                @endallows
                 <li><a class="alert-danger" href="{{url('/auth/logout')}}">Logout</a></li>
             </ul>
         </li>

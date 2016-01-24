@@ -54,7 +54,7 @@ $(function() {
                 return false;
                 break;
             default:
-                return false;
+                return true;
         }
         return false;
     });

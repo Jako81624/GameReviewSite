@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Article;
 use App\Tools\Permissions;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
@@ -18,7 +19,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $data['games'] = Article::orderBy('title', 'asc')->get();
+        $data['games'] = Article::orderBy('title', 'asc')->where('published', 1)->get();
         return view('pages.allgames', $data);
     }
 
@@ -51,44 +52,15 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        if($article->published == false && !Permissions::check('articles.view-unpublished'))
-            abort(403);
+        if($article->published == false)
+        {
+            if(!Auth::check() OR (!Permissions::check('article.view-unpublished') AND $article->user_id != Auth::user()->id))
+            {
+                abort(403);
+            }
+        }
         return view('pages.review', $article); //Okay before anyone asks, I dont want temporary_* to even exist. I want to use coverid
         //but im under time pressure and ill fix it later, got a query that will fix it up when cover is ready
         //@TODO EVERYTHING
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }

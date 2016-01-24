@@ -29,9 +29,9 @@
 					{!!$graphics!!}
 					<h2 id="Conclusion">Conclusion</h2>
 					{!!$conclusion!!}
-					<h2>--------------------------------------</h2>
-					<h2>Rating: {{$score}}/10 - {{$score_text}}</h2>
-					<h2>--------------------------------------</h2>
+					<p></p>
+					<h2>Rating: {!!$score!!}/10 - {!!$score_text!!}</h2>
+					<p></p>
 					
 					<h2 id="Screenshots">Screenshots</h2>
 					{!!$screenshots!!}
@@ -46,8 +46,35 @@
 						</div>
 					@endif
 					Article By: {{$user['name']}}<br/>
-					
+
+					@allows('article.edit')
+						<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit</a><br />
+					@endallows
+					@if(Auth::check())
+						@if(Auth::user()->id == $user_id AND $published == 0 AND app('Permissions')->check('article.editown'))
+							<a href="{!! action('Admin\ArticleController@edit', [$id]) !!}">Edit Before Publishing</a><br />
+						@endif
+					@endif
+                    @allows('article.admin')
+					<h3>Administration</h3>
+					<table class="table table-condensed table-hover" style="width: 60%">
+						<tr><th>Property</th><th>Value</th></tr>
+						<tr><td>ID</td><td>{{$id}}</td></tr>
+						<tr><td>SLUG</td><td>{{$slug}}</td></tr>
+						<tr><td>STORE</td><td>{{$store or 'N/A'}}</td></tr>
+						<tr><td>APPID</td><td>{{$store_app_id or 'N/A'}} <a href="http://store.steampowered.com/app/{{$store_app_id or '0'}}/" target="_blank">view</a></td></tr>
+						<tr><td>REDDIT</td><td>{{$subreddit or 'N/A'}}</td></tr>
+						<tr><td>PUBLIC</td><td>{{$published}}</td></tr>
+						<tr><td>CREATED</td><td>{{$created_at}}</td></tr>
+					</table>
+                    @endallows
+                </div>
+
+                <div class="row">
+
+					@allows('article.admin')
 					<div class="row">
+
 
     				<div class="col-md-4">
         				<div class="media">
@@ -68,7 +95,8 @@
     				</div>
 
 				</div>
-
+				@endallows
+				
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">

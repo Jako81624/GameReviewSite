@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Tools;
-use Bouncer;
+use Silber\Bouncer\BouncerFacade as Bouncer;
 
 class Permissions
 {
