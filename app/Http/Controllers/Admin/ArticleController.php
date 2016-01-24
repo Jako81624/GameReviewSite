@@ -143,7 +143,7 @@ class ArticleController extends BackendController
             {
                 $screenshots[$key]['image_id'] = $screenshot;
                 $screenshots[$key]['article_id'] = $article->id;
-                $screenshots[$key]['ip_address'] = $request->getClientIp();
+                $screenshots[$key]['ip_address'] = inet_pton($request->getClientIp());
 
             }
             ArticleScreenshot::insert($screenshots);
