@@ -69,7 +69,7 @@ class ArticleController extends BackendController
         $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
         $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
         $article->save();
-        return redirect()->action('ArticleController@show', [$article->slug]);
+        return redirect()->route('games', [$article->slug]);
     }
 
     /**
@@ -129,7 +129,7 @@ class ArticleController extends BackendController
             $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
             $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
             $article->save();
-            return redirect()->action('ArticleController@show', [$article->slug]);
+            return redirect()->route('games', [$article->slug]);
 
         }
         abort(403);
