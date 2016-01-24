@@ -50,7 +50,7 @@ class ImageController extends BackendController
             Clockwork::info('Storing on Filesystem');
             $img->save(storage_path() . '/app/' . $path . $randomFilename . '.png', 90);
         }
-        if($thumbnail === null) {
+        if($image === null and $thumbnail === null) {
             Clockwork::info('New Image');
             $image = new Images;
             $image->user_id = Auth::user()->id;
