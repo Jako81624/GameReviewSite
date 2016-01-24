@@ -60,13 +60,13 @@
 					</table>
                     @endallows
                 </div>
-                
+
                 <div class="row">
 
     				<div class="col-lg-5">
         				<div class="media">
             				<a class="pull-left" href="#">
-                				<img class="media-object dp img-circle" src="//cdn.ocgr.io/Hn5A0D9saHSp16p7.png" style="width: 100px;height:100px;">
+                				<img class="media-object dp img-circle" src="//cdn.ocgr.io/Hn5A0D9saHSp16p7.png" style="width: 100%;height:100px;">
             				</a>
             				<div class="media-body">
                 				<h4 class="media-heading">Name <small> Country</small></h4>
