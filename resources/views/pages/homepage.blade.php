@@ -44,7 +44,7 @@
                     <a href="/games/relichunterszero" style="color:inherit"><h1>Relic Hunters Zero</h1></a>
                     <p>One of our highly skilled reviewers looks over a game I am totally unfamiliar with</p>
                 </div>
-            </div>
+            </div>-->
             <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -53,7 +53,7 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>-->
+        </div>
     </div>
 
     <div id="latest" class="container-fluid">
