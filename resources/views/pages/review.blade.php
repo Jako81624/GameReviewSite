@@ -70,7 +70,7 @@
             				</a>
             				<div class="media-body">
                 				<h4 class="media-heading">{{$user['name']}} <small>{{$writer['country']}}</small></h4>
-                				<h5><!-- fucking role--> @if(isset($writer['homepage']) && $writer['homepage']!="")<a href="{{$writer['homepage']}}">{{$writer['homepage']}}</a>@endif</h5>
+                				<h5>{{app('Permissions')->get_role($user['id'])}} @if(isset($writer['homepage']) && $writer['homepage']!="")<a href="{{$writer['homepage']}}">{{$writer['homepage']}}</a>@endif</h5>
                 				<hr style="margin:8px auto">
 
                 				@if(isset($writer['reddit']) && $writer['reddit']!="")<span class="label label-info"><a href="http://reddit.com/u/{{$writer['reddit']}}">reddit</a></span>@endif
