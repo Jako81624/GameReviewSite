@@ -22,7 +22,10 @@ class ArticleController extends BackendController
      */
     public function index()
     {
-        return 'hello';
+		if(!Permissions::check('article.list'))
+            abort(403);
+        $list = Article::paginate(10);
+		return view('pages.Backend.articlelist', compact('list'));
     }
 
     /**

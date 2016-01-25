@@ -16,6 +16,10 @@
                 @allows('article.create')
                 <li><a href="{{action('Admin\ArticleController@create')}}">Create Article</a></li>
                 @endallows
+				<li role="separator" class="divider"></li>
+				@allows('article.list')
+				<li><a href="{{action('Admin\ArticleController@index')}}">List Articles</a></li>
+				@endallows
                 <li><a class="alert-danger" href="{{url('/auth/logout')}}">Logout</a></li>
             </ul>
         </li>
