@@ -24,7 +24,7 @@ class ArticleController extends BackendController
     {
 		if(!Permissions::check('article.list'))
             abort(403);
-        $list = Article::paginate(10);
+        $list = Article::orderBy('id', 'desc')->paginate(100);
 		return view('pages.Backend.articlelist', compact('list'));
     }
 
