@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\URL;
+use Clockwork\Support\Laravel\Facade as Clockwork;
 
 class AuthController extends Controller
 {
@@ -51,6 +52,27 @@ class AuthController extends Controller
             'password' => 'required|confirmed|min:6',
         ]);
     }
+	
+	 /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function register(Request $request)
+    {
+        $validator = $this->validator($request->all());
+
+        if ($validator->fails()) {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+
+        Auth::guard($this->getGuard())->login($this->create($request));
+
+        return redirect($this->redirectPath());
+    }
 
     /**
      * Create a new user instance after a valid registration.
@@ -58,12 +80,16 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    protected function create(Request $data)
     {
+		$ip = $data->getClientIp();
+		Clockwork::info('IP' . $ip);
+		$data = $data->all();
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+			'ip_address' => $ip //inet_pton
         ]);
     }
 

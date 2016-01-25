@@ -23,7 +23,7 @@ $(function() {
                     success: function(data) {
                         if(data.auth == false)
                         {
-                            msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error: " + data.error);
+							bootbox.alert('Wrong username or password');
                         } else {
                             location.reload();
                         }
@@ -42,15 +42,31 @@ $(function() {
                 }
                 return false;
                 break;
-            case "register-form":
-                var $rg_username=$('#register_username').val();
-                var $rg_email=$('#register_email').val();
-                var $rg_password=$('#register_password').val();
-                if ($rg_username == "ERROR") {
-                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
-                } else {
-                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
-                }
+            case "register-form":	
+				$.ajax({
+                    type: 'POST',
+                    url: '/auth/register',
+                    data: $('#register-form').serialize(),
+                    beforeSend: function() {
+                        msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-refresh", "Registering...");
+                    },
+                    success: function(data) {
+                        if(data.auth == false)
+                        {
+                            msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error: " + data.error);
+                        } else {
+                            location.reload();
+                        }
+                    },
+					error: function(xhr, textStatus, thrownError) {
+							var response = JSON.parse(xhr.responseText);
+							var errors = '';
+							$.each( response, function( key, value) {
+								errors += '<li>' + value + '</li>';
+							});
+                        bootbox.alert('Something went to wrong.Please Try again later... ' + errors);
+                    }
+                });	
                 return false;
                 break;
             default:
