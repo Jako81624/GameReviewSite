@@ -65,16 +65,17 @@
                     <form id="register-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-register-msg">
-                                {{--<div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>--}}
-                                <span id="text-register-msg">Register while in alpha is by admin invite only.</span>
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register a new account.</span>
                             </div>
-                            {{--<input id="register_username" class="form-control" type="text" placeholder="Username" required>
-                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>--}}
+                            <input id="register_username" class="form-control" type="text" placeholder="Username" name="name" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" name="email" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" name="password" required>
+							<input id="register_password_confirmation" class="form-control" type="password" placeholder="Confirm Password" name="password_confirmation" required>
                         </div>
                         <div class="modal-footer">
                             <div>
-                                {{--<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>--}}
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
                             </div>
                             <div>
                                 <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>

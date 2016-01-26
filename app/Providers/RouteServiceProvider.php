@@ -27,7 +27,7 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot($router);
         \Route::bind('articleslug', function($value)
         {
-            return \App\Article::where('slug', $value)->with('user')->with('screenshot.image')->firstOrFail();
+            return \App\Article::where('slug', $value)->with('user')->with('writer')->with('screenshot.image')->firstOrFail();
         });
     }
 
