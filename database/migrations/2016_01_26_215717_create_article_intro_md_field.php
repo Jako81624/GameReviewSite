@@ -27,4 +27,5 @@ class CreateArticleIntroMdField extends Migration
         Schema::table('articles', function ($table) {
             $table->dropColumn('intro_md');
         });
+	}
 }
