@@ -99,11 +99,11 @@
             {!! Form::text('temporary_jumbo_image', null, ['class' => 'form-control input-md']) !!}
         </div>
     </div>
-
+	
     <div class="form-group col-md-12">
         {!! Form::label('store', 'store', array('class' => 'col-md-2')) !!}
         <div class="col-md-8">
-            {!! Form::text('store', null, ['class' => 'form-control input-md']) !!}
+			{!! Form::select('store', array('steam' => 'Steam', '' => 'None'), 'steam') !!}
         </div>
     </div>
 
