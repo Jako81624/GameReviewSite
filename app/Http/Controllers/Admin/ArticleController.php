@@ -62,6 +62,7 @@ class ArticleController extends BackendController
 		$article->titletext = $request->input('titletext');
         $article->score_text_md = $request->input('score_text_md');
         $article->gameplay_md = $request->input('gameplay_md');
+		$article->intro_md = $request->input('intro_md');
         $article->story_md = $request->input('story_md');
         $article->graphics_md = $request->input('graphics_md');
         $article->conclusion_md = $request->input('conclusion_md');
@@ -72,6 +73,7 @@ class ArticleController extends BackendController
         $article->story = Markdown::convertToHtml($request->input('story_md'));
         $article->graphics = Markdown::convertToHtml($request->input('graphics_md'));
         $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
+		$article->intro = Markdown::convertToHtml($request->input('intro_md'));
         $article->save();
         $screenshots = array();
 		if($request->input('screenshot') != null)
@@ -138,6 +140,7 @@ class ArticleController extends BackendController
             $article->graphics_md = $request->input('graphics_md');
             $article->conclusion_md = $request->input('conclusion_md');
             $article->screenshots_md = $request->input('screenshots_md');
+			$article->intro_md = $request->input('intro_md');
             //actual fields
             $article->score_text = Markdown::convertToHtml($request->input('score_text_md'));
             $article->gameplay = Markdown::convertToHtml($request->input('gameplay_md'));
@@ -145,6 +148,7 @@ class ArticleController extends BackendController
             $article->graphics = Markdown::convertToHtml($request->input('graphics_md'));
             $article->conclusion = Markdown::convertToHtml($request->input('conclusion_md'));
             $article->screenshots = Markdown::convertToHtml($request->input('screenshots_md'));
+			$article->intro = Markdown::convertToHtml($request->input('intro_md'));
             $article->save();
             $screenshots = array();
 			if($request->input('screenshot') != null)

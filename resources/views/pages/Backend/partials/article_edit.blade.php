@@ -42,6 +42,14 @@
             {!! Form::textarea('score_text_md', null, ['class' => 'form-control', 'data-provide' => 'markdown']) !!}
         </div>
     </div>
+	
+	<div class="form-group col-md-12">
+        {!! Form::label('intro_md', 'Intro', array('class' => 'col-md-2')) !!}
+        <div class="col-md-8">
+            {!! Form::textarea('intro_md', null, ['class' => 'form-control', 'data-provide' => 'markdown']) !!}
+        </div>
+    </div>
+	
     <!-- Textarea -->
     <div class="form-group col-md-12">
         {!! Form::label('gameplay_md', 'Gameplay', array('class' => 'col-md-2')) !!}
