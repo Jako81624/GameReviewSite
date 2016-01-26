@@ -32,15 +32,20 @@ class ImageController extends BackendController
     {
         $file = Request::file('file');
 		$randomFilename = str_random();
-        $return['fullsize'] = $this->makeImage($file, 1920, 1080, $randomFilename);
+        $return['fullsize'] = $this->makeImage($file, null, null, $randomFilename);
         $return['thumbnail'] = $this->makeImage($file, 200, 200, $randomFilename, $return['fullsize']);
         return $return;
     }
 
-    protected function makeImage($file, $height, $width, $randomFilename, $thumbnail=null)
+    protected function makeImage($file, $height=null, $width=null, $randomFilename, $thumbnail=null)
     {
         $md5 = md5_file($file->getRealPath());
-        $img = Image::make($file)->fit($height, $width);
+		$img = Image::make($file);
+		if(!($height == null AND $width == null))
+		{
+			Clockwork::info('Fitting Image');
+			$img->fit($height, $width);
+		}
         $path = 'images/';
         if($thumbnail != null)
             $path = 'images/thumb/';
@@ -56,8 +61,8 @@ class ImageController extends BackendController
             $image->user_id = Auth::user()->id;
             $image->filename = $file->getClientOriginalName();
             $image->file = $randomFilename . '.png';
-            $image->height = $height;
-            $image->width = $width;
+            $image->height = $img->height();
+            $image->width = $img->width();
             $image->md5_hash = $md5;
         }elseif($thumbnail != null AND $image->thumbnail_file == null){
             Clockwork::info('Thumbnail Updated');
