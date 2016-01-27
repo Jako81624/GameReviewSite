@@ -16,8 +16,11 @@
 </div>
 
 <style>
-.container p {
+#paddingbottom {
 	padding-bottom: 200px;
+}
+li {
+	font-size: 20px;
 }
 </style>
 
@@ -32,5 +35,6 @@
 	</ul>
 	<h3>First Update</h3>
 	<p>This is the first update.  We are working on this initial rollout.</p>
+	<div class="paddingbottom"></div>
 </div>
 	@endsection
