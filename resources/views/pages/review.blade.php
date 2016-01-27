@@ -30,7 +30,9 @@
 					<h2 id="Conclusion">Conclusion</h2>
 					{!!$conclusion!!}
 					<p></p>
-					<h2>Rating: {!!$score!!}/10 - {!!$score_text!!}</h2>
+					<h2>Rating: {!!$score!!}/10</h2>
+					<p></p>
+					<p>{!!$score_text!!}</p>
 					<p></p>
 					
 					<h2 id="Screenshots">Screenshots</h2>
