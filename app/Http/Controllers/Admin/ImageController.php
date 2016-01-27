@@ -33,7 +33,7 @@ class ImageController extends BackendController
         $file = Request::file('file');
 		$randomFilename = str_random();
         $return['fullsize'] = $this->makeImage($file, null, null, $randomFilename);
-        $return['thumbnail'] = $this->makeImage($file, 200, 200, $randomFilename, $return['fullsize']);
+        $return['thumbnail'] = $this->makeImage($file, 600, 337, $randomFilename, $return['fullsize']);
         return $return;
     }
 
