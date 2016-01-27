@@ -17,6 +17,13 @@ $(document).ready(function() {
                 $('#uploadedImagesLinks > tbody:last-child').append('<tr><td>'+ response.fullsize.filename +'</td><td>Full</td><td><a href="http://cdn.ocgr.io/'+ response.fullsize.file +'">'+ response.fullsize.file +'</a></td></tr>');
                 $('#uploadedImagesLinks > tbody:last-child').append('<tr><td>'+ response.thumbnail.filename +'</td><td>Thumb</td><td><a href="http://cdn.ocgr.io/thumb/'+ response.thumbnail.file +'">'+ response.thumbnail.file +'</a></td></tr>');
             })
+			this.on('sending', function(file, xhr, formData){
+				formData.append('full_width', $('[name="full_width"]').val());
+				formData.append('full_height', $('[name="full_height"]').val());
+				formData.append('thumb_width', $('[name="thumb_width"]').val());
+				formData.append('thumb_height', $('[name="thumb_height"]').val());
+				formData.append('override_deduplication', $('[name="override_deduplication"]').is(':checked'));
+			});
         }
 
     });

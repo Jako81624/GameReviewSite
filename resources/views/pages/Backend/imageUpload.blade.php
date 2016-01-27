@@ -4,8 +4,15 @@
         <div class="row">
             <div class="col-md-8">
                <h1>Image Upload</h1>
-                <div id="imageUploadDroparea" class="dropzone"></div>
-            </div>
+                <div id="imageUploadDroparea" class="row dropzone"></div>
+				<div class="row col-md-12">
+					<div class="col-md-3 uploadSetting">{!! Form::text('full_width', null, ['class' => 'form-control input-md', 'placeholder'=>'Full Width']) !!}</div>
+					<div class="col-md-3 uploadSetting">{!! Form::text('full_height', null, ['class' => 'form-control input-md', 'placeholder'=>'Full Height']) !!}</div>
+					<div class="col-md-3 uploadSetting">{!! Form::text('thumb_width', null, ['class' => 'form-control input-md', 'placeholder'=>'Thumbnail Width']) !!}</div>
+					<div class="col-md-3 uploadSetting">{!! Form::text('thumb_height', null, ['class' => 'form-control input-md', 'placeholder'=>'Thumbnail Height']) !!}</div>
+											<div class="checkbox"><label>{{Form::checkbox('override_deduplication', 'yes')}} Override Deduplication</label></div>
+				</div>          
+			</div>
             <div class="col-md-4">
                 <h1>Links</h1>
                 <table class="table table-condensed table-hover" id="uploadedImagesLinks">

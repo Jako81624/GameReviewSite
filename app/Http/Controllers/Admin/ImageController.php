@@ -32,13 +32,20 @@ class ImageController extends BackendController
     {
         $file = Request::file('file');
 		$randomFilename = str_random();
-        $return['fullsize'] = $this->makeImage($file, null, null, $randomFilename);
-        $return['thumbnail'] = $this->makeImage($file, 200, 200, $randomFilename, $return['fullsize']);
+		$fullsizeWidth = Request::input('full_width', null);
+		$fullsizeHeight= Request::input('full_height', null);
+		$thumbnailWidth = Request::input('thumb_width', 200);
+		$thumbnailHeight = Request::input('thumb_height', 200);
+		$overrideDeduplication = Request::input('override_deduplication', 'false');
+		
+        $return['fullsize'] = $this->makeImage($file, $fullsizeWidth, $fullsizeHeight, $randomFilename, null, $overrideDeduplication);
+        $return['thumbnail'] = $this->makeImage($file, $thumbnailWidth, $thumbnailHeight, $randomFilename, $return['fullsize'], $overrideDeduplication);
         return $return;
     }
 
-    protected function makeImage($file, $height=null, $width=null, $randomFilename, $thumbnail=null)
+    protected function makeImage($file, $height=null, $width=null, $randomFilename, $thumbnail=null, $overrideDeduplication='false')
     {
+		Clockwork::info('Override: ' . $overrideDeduplication);
         $md5 = md5_file($file->getRealPath());
 		$img = Image::make($file);
 		if(!($height == null AND $width == null))
@@ -50,12 +57,14 @@ class ImageController extends BackendController
         if($thumbnail != null)
             $path = 'images/thumb/';
 
-        $image = Images::where('md5_hash', $md5)->first();
-        if($image === null or $image->thumbnail_file == null) {
+        $image = Images::where('md5_hash', $md5)->orderBy('id', 'desc')->first();
+        if($image === null or $image->thumbnail_file == null or $overrideDeduplication == 'true') {
             Clockwork::info('Storing on Filesystem');
+			if($overrideDeduplication == true)
+				Clockwork::info('Deduplication Overide');
             $img->save(storage_path() . '/app/' . $path . $randomFilename . '.png', 90);
         }
-        if($image === null and $thumbnail === null) {
+        if(($image === null or $overrideDeduplication == 'true') and $thumbnail === null) {
             Clockwork::info('New Image');
             $image = new Images;
             $image->user_id = Auth::user()->id;

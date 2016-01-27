@@ -125,3 +125,6 @@ p {
     white-space: nowrap;
     overflow: hidden;
 }
+.uploadSetting {
+	z-index: 2;
+}
