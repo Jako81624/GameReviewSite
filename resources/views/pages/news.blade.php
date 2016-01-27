@@ -19,7 +19,7 @@
 .paddingbottom {
 	padding-bottom: 200px;
 }
-li {
+.container li {
 	font-size: 20px;
 }
 </style>
