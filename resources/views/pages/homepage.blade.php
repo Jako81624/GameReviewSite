@@ -13,7 +13,7 @@
             @foreach($jakoistrash as $key=>$ads)
             <div class="item ad1 @if($key == 0) active @endif " style="background: url({{$ads->temporary_jumbo_image}}) no-repeat center center fixed; height: 94vh">
                 <div class="carousel-caption">
-                <a href="/games/{{$ads->slug}}" id="spannedimage" style="height: 100%; width: 100%; display: block;"></a>
+                <a href="/games/{{$ads->slug}}" id="spannedimage" style="height: 100%; width: 100%; display: table-caption;"></a>
                 <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
                 <p>{{$ads->titletext}}</p>
                 <!--<img src="{{$ads->temporary_jumbo_image}}" alt="...">-->
