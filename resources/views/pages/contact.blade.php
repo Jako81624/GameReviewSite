@@ -28,6 +28,6 @@
 	<h3>Security Enquiries</h3>
 	<p>For general issues, security flaws or potential exploits please contact the admin at admin@ocgr.io, or preferably Posttwo who can be reached at posttwo@posttwo.pt.</p>
 	<h3>Business Enquiries</h3>
-	<p id="bottom">For business enquiries you can contact us at: admin@ocgr.io</p>
+	<p id="bottom">For business enquiries you can contact us at: admin@ocgr.io or you may reach me at jacobwlane@gmail.com</p>
 </div>
 	@endsection
