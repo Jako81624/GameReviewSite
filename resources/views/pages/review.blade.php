@@ -34,6 +34,7 @@
 					<p></p>
 					<p>{!!$score_text!!}</p>
 					<p></p>
+					<h2>Article Date</h2>
 					<p>Published on: {{$created_at}}</p>
 					
 					<h2 id="Screenshots">Screenshots</h2>
