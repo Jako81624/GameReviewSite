@@ -34,7 +34,7 @@
 					<p></p>
 					<p>{!!$score_text!!}</p>
 					<p></p>
-					<p>Published on: {{$article->created_at}}</p>
+					<p>Published on: {{$created_at}}</p>
 					
 					<h2 id="Screenshots">Screenshots</h2>
 					{!!$screenshots!!}
