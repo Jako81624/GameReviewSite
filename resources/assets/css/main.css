@@ -45,6 +45,7 @@ p {
 	height: auto;
 	width: 100%;
 	color: #000;
+	padding-bottom: 50px;
 }
 #latest h1 {
 	font-family: "Quicksand" !important;
@@ -60,7 +61,7 @@ p {
 	height: auto;
 	width: 100%;
 	color: #000;
-	padding-bottom: -100px;
+	padding-bottom: 50px;
 }
 
 #writers h1 {
