@@ -46,7 +46,6 @@ p {
 	min-height: 100vh;
 	width: 100%;
 	color: #000;
-	padding-bottom: 20px;
 }
 #latest h1 {
 	font-family: "Quicksand" !important;
@@ -63,7 +62,6 @@ p {
 	min-height: 100%;
 	width: 100%;
 	color: #000;
-	padding-bottom: 20px;
 }
 
 #writers h1 {
@@ -74,7 +72,9 @@ p {
 #writers h3 {
 	font-family: "Quicksand" !important;
 }
-
+#about {
+	padding-bottom: 20px;
+}
 
 /*---------------------------------------------------*/
 
