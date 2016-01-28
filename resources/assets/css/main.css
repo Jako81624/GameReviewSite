@@ -75,6 +75,8 @@ p {
 }
 #about {
 	padding-bottom: 100px;
+	height: auto;
+	min-height: 100%;
 }
 
 /*---------------------------------------------------*/
