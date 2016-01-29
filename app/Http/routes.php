@@ -40,3 +40,5 @@ Route::get('/news', function () {
 Route::group(['middleware' => 'debug'], function() {
 	Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 });
+
+Route::get('/games/{articleslug}/addComment', 'ArticleController@addReply');

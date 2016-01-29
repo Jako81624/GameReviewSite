@@ -129,3 +129,60 @@ p {
 .uploadSetting {
 	z-index: 2;
 }
+.post-comments {
+    padding-bottom: 9px;
+    margin: 15px 0 5px;
+}
+
+.comments-nav {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+.post-comments .comment-meta {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+.post-comments .media {
+    border-left: 1px dotted #000;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.post-comments .media-heading {
+    font-size: 12px;
+    color: grey;
+}
+
+.post-comments .comment-meta a {
+    font-size: 12px;
+    color: grey;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.comments-nav .dropdown-menu{
+    min-width: 100%;
+}
+
+.comments-nav .pagination{
+    margin: 0px 0;
+}
+
+.post-comments .comment-text{
+    vertical-align:top;
+    display: inline-block;
+}
+.blizzard{
+    background-image: url("//b.thumbs.redditmedia.com/Vsm1LiRGi9wgOCZga_YOP8n7dmP7TSN3n1Eq7EpO3_Y.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: rgba(225, 255, 245, 0.46);
+}
+.blizzard .children{
+    background-color: #FFFFFF;
+}

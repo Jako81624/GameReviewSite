@@ -2,10 +2,12 @@
 
 namespace App;
 
+use App\Packages\Commentable\Commentable;
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    use Commentable;
     public function user()
     {
         return $this->belongsTo('App\User');
