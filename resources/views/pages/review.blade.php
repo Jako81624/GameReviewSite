@@ -34,8 +34,6 @@
 					<p></p>
 					<p>{!!$article->score_text!!}</p>
 					<p></p>
-					<h2>Article Date</h2>
-					<p>Published on: {{$article->created_at}}</p>
 					
 					<h2 id="Screenshots">Screenshots</h2>
 					{!!$article->screenshots!!}
@@ -84,8 +82,15 @@
             				</div>
         				</div>
     				</div>
+    			</div>
 
-				</div>		
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2>Article Date</h2>
+						<p>Published on: {{$article->created_at}}</p>
+    				</div>
+    			</div>
+
                     @allows('article.admin')
 					<h3>Administration</h3>
 					<table class="table table-condensed table-hover" style="width: 60%">
