@@ -19,8 +19,8 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="page-scroll" href="#Top">Top</a></li>
-                        <li><a class="page-scroll" href="#Gameplay">Gameplay</a></li>
                         <li><a class="page-scroll" href="#Story">Story</a></li>
+                        <li><a class="page-scroll" href="#Gameplay">Gameplay</a></li>
                         <li><a class="page-scroll" href="#Graphics">Graphics and Settings</a></li>
                         <li><a class="page-scroll" href="#Conclusion">Conclusion</a></li>
                         <li><a class="page-scroll" href="#Screenshots">Screenshots</a></li>
