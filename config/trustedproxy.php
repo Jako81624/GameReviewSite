@@ -38,7 +38,7 @@ return [
     /*
      * Or, to trust all proxies, uncomment this:
      */
-     # 'proxies' => '*',
+     'proxies' => '*',
 
     /*
      * Default Header Names
