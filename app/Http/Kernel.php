@@ -19,6 +19,7 @@ class Kernel extends HttpKernel
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \App\Http\Middleware\VerifyCsrfToken::class,
         'Clockwork\Support\Laravel\ClockworkMiddleware',
+		'Fideloper\Proxy\TrustProxies',
     ];
 
     /**

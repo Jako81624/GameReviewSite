@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'https://ocgr.io',
 
     /*
     |--------------------------------------------------------------------------
@@ -156,6 +156,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         'GrahamCampbell\Markdown\MarkdownServiceProvider',
 		Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+		'Fideloper\Proxy\TrustedProxyServiceProvider',
 
 
     ],
