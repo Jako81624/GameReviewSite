@@ -90,7 +90,7 @@
         <p>We are run by members of the community and refuse sponsorship from developers.  We all have full time jobs or are in education and the site is run out of our own pockets.  We do what we do out of love for games and wanting
         to give the community a place to come to for impartial and unbiased reviews.</p>
         <h3>Who is writing this?</h3>
-        <p>That would be me, Jacob Lane.  I write HTML and CSS.  Our other developers (Posttwo and genuineparts) are PHP gods and genuineparts is hosting for us.  Big kudos to those two.  Also huge thanks to all of our reviewers,
+        <p>That would be me, Jacob.  I write HTML and CSS.  Our other developers (Posttwo and genuineparts) are PHP gods and genuineparts is hosting for us.  Big kudos to those two.  Also huge thanks to all of our reviewers,
         who without, this would all be impossible.</p>
     </div>
 
