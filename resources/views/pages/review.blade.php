@@ -21,10 +21,10 @@
                     @allows('article.admin')
                     @endallows
 					{!!$article->intro!!}
-					<h2 id="Gameplay">Gameplay</h2>
-                    {!!$article->gameplay!!}
 					<h2 id="Story">Story</h2>
 					{!!$article->story!!}
+					<h2 id="Gameplay">Gameplay</h2>
+                    {!!$article->gameplay!!}
 					<h2 id="Graphics">Graphics, Settings and Performance</h2>
 					{!!$article->graphics!!}
 					<h2 id="Conclusion">Conclusion</h2>
