@@ -30,6 +30,7 @@
   		<span class="input-group-addon" id="basic-addon1"><3</span>
 	</div>
 		<button class="btn btn-success" id="giveaway-key-button" type="button">Generate Link!</button> or press enter.
+	<div>Keys are encrypted and decrypted clientside. The unencrypted key and the decryption key is never sent to the server.</div>
 </div>
 <div class="col-md-6">
 <h2>Links will show here</h2>
