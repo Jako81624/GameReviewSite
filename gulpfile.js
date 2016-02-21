@@ -10,10 +10,10 @@ var elixir = require('laravel-elixir');
  | file for our application, as well as publishing vendor resources.
  |
  */
-
+//<script type="text/javascript" src="path-to/bower_components/crypto-js/crypto-js.js"></script>
 elixir(function(mix) {
      mix.styles(['bootstrap.css', 'dropzone.css', 'bootstrap-markdown.min.css', 'lightbox.css', 'main.css', 'fonts.css'])
-        .scripts(['jquery-2.1.4.min.js', 'bootstrap.js', 'jquery.easing.min.js', 'scrolling-nav.js', 'bootbox.js', 'lightbox.js', 'to-markdown.js', 'markdown.js', 'bootstrap-markdown.js', 'dropzone.js', 'modal.js', 'app.js'])
+        .scripts(['jquery-2.1.4.min.js', 'bootstrap.js', 'jquery.easing.min.js', 'scrolling-nav.js', 'bootbox.js', 'lightbox.js', 'to-markdown.js', 'markdown.js', 'bootstrap-markdown.js', 'crypto-js/crypto-js.js', 'dropzone.js', 'modal.js', 'app.js'])
          .copy('resources/assets/fonts', 'public/build/fonts')
 		 .copy('resources/assets/images', 'public/build/images')
 		 .copy('resources/assets/css/list.css', 'public/css/list.css')

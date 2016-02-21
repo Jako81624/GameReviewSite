@@ -157,6 +157,7 @@ return [
         'GrahamCampbell\Markdown\MarkdownServiceProvider',
 		Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 		'Fideloper\Proxy\TrustedProxyServiceProvider',
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
 
 
     ],
@@ -213,7 +214,8 @@ return [
         'Clockwork' => 'Clockwork\Support\Laravel\Facade',
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Markdown' => 'GrahamCampbell\Markdown\Facades\Markdown'
+        'Markdown' => 'GrahamCampbell\Markdown\Facades\Markdown',
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
 
 
     ],

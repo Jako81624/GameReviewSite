@@ -42,3 +42,10 @@ Route::group(['middleware' => 'debug'], function() {
 });
 
 Route::get('/games/{articleslug}/addComment', 'ArticleController@addReply');
+
+
+//KEYS
+Route::get('/k', 'KeyController@index');
+Route::get('/k/{id}', 'KeyController@index');
+Route::post('/k', 'KeyController@saveKey');
+Route::post('/k/getKey/{id}', 'KeyController@retrieveKey');
