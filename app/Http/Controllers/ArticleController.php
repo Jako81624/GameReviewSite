@@ -89,7 +89,7 @@ class ArticleController extends Controller
             $pagination = $comments->render();
         }
         $template = 'pages.review';
-        if ($request->is('interview/*')) {
+        if ($request->is('interviews/*')) {
             $template = 'pages.interview';
         }
         return view($template, compact('article', 'x', 'pagination')); //Okay before anyone asks, I dont want temporary_* to even exist. I want to use coverid
