@@ -13,7 +13,11 @@
             @foreach($jakoistrash as $key=>$ads)
             <div class="item ad1 @if($key == 0) active @endif " style="background: url({{$ads->temporary_jumbo_image}}) no-repeat center center fixed; height: 94vh">
                 <div class="carousel-caption">
+                @if($ads->interview == true)
+                <a href="/interviews/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
+                @else
                 <a href="/games/{{$ads->slug}}" style="color:inherit"><h1>{{$ads->title}}</h1></a>
+                @endif
                 <p>{{$ads->titletext}}</p>
                 <!--<img src="{{$ads->temporary_jumbo_image}}" alt="...">-->
                 </div>
@@ -62,8 +66,13 @@
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="thumbnail">
+                    @if($article->interview == true)
+                    <a href="/interviews/{{$article->slug}}"><h3 style="color: #000">{{$article->title}}</h3></a>
+                    <a href="/interviews/{{$article->slug}}"><img src="{{$article->temporary_jumbo_image}}"></a>
+                    @else
                     <a href="/games/{{$article->slug}}"><h3 style="color: #000">{{$article->title}}</h3></a>
                     <a href="/games/{{$article->slug}}"><img src="{{$article->temporary_jumbo_image}}"></a>
+                    @endif
                 </div>
             </div>
             @endforeach
