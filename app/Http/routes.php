@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 Route::get('/allgames', 'ArticleController@index');
 Route::get('/games/{articleslug}', 'ArticleController@show');
+Route::get('/interviews/{articleslug}', 'ArticleController@show');
 
 //AUTHENTICATION
 Route::post('auth/login', 'Auth\AuthController@postLogin');
