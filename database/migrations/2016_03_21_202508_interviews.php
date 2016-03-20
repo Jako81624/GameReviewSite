@@ -25,3 +25,4 @@ class TldrFieldForArticles extends Migration
             $table->dropColumn('interview');
         });
     }
+}
