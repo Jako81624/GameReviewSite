@@ -18,32 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    @allows('article.admin')
-                    @endallows
 					{!!$article->intro!!}
-					<h2 id="Story">Story</h2>
-					{!!$article->story!!}
-					<h2 id="Gameplay">Gameplay</h2>
-                    {!!$article->gameplay!!}
-					<h2 id="Graphics">Graphics, Settings and Performance</h2>
-					{!!$article->graphics!!}
-					<h2 id="Conclusion">Conclusion</h2>
-					{!!$article->conclusion!!}
-					<p></p>
-					<h2>Rating: {!!$article->score!!}/10</h2>
-					<p></p>
-					<p>{!!$article->score_text!!}</p>
-					<p></p>
-					
-					<h2 id="Screenshots">Screenshots</h2>
-					{!!$article->screenshots!!}
-					@foreach($article->screenshot as $article->screen)
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<a data-lightbox="screenies" href="//{{env('APP_CDN_DOMAIN')}}/{{$article->screen['image']['file']}}"><img style="width: 100%" src="//{{env('APP_CDN_DOMAIN')}}/thumb/{{$article->screen['image']['thumbnail_file']}}"></a>
-							</div>
-						</div>
-					@endforeach
                 </div>
                 <div class="col-md-4">
 					@if($article->store == 'steam' && isset($article->store_app_id))
