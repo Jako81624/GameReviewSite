@@ -18,8 +18,13 @@
 	@foreach ($game as $single)
 		<div class="col-md-4">
 			<div class="thumbnail">
+				@if($single->interview == true)
+				<a href="/interviews/{{$single->slug}}" style="color:inherit"><h4>{{$single->title}}</h4></a>
+				<a href="/interviews/{{$single->slug}}"><img src="{{$single->temporary_jumbo_image}}"></a>
+				@else
 				<a href="/games/{{$single->slug}}" style="color:inherit"><h4>{{$single->title}}</h4></a>
 				<a href="/games/{{$single->slug}}"><img src="{{$single->temporary_jumbo_image}}"></a>
+				@endif
 			</div>
 		</div>
 	@endforeach
